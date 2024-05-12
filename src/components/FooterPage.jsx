@@ -22,13 +22,16 @@ function FooterPage() {
                   alt="swiphr"
                   className="h-10 w-10 mr-2"
                 />
-                <p className="font-bold text-lg">Corporate</p>
+                <div className="">
+                  <p className="font-bold text-3xl">ELALOEY</p>
+                  <p className="font-bold text-3xl">FOUNDRY</p>
+                </div>
               </Link>
             </div>
             <p className="mb-4">
-              We accelerate Africa’s bold and visionary founders in the earliest
-              stages of building global businesses that solve Africa’s biggest
-              challenges.
+              LAUNCH AND SCALE YOUR STARTUP IDEAS; We are building the next big
+              thing by providing startups with the oxygen to launch, thrive and
+              scale
             </p>
           </div>
           <div className="flex flex-col">
@@ -68,10 +71,10 @@ function FooterPage() {
           </div>
         </div>
         <Footer.Divider className="mt-8" />
-        <div className="w-full flex items-center justify-center mt-8">
+        <div className="w-full flex justify-start p-3">
           <Footer.Copyright
             href="#"
-            by=" Corporate"
+            by=" Elaloey Foundry. All rights reserved"
             year={new Date().getFullYear()}
           />
         </div>
