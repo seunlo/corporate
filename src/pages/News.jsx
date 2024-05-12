@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
 function News() {
   return (
-    <div>News</div>
-  )
+    <img
+      src="https://colormadehappy.com/wp-content/uploads/2022/11/Christmas-Tree-Drawing-scaled-e1667860123547.jpg"
+      alt=""
+    />
+  );
 }
 
-export default News
+export default News;
