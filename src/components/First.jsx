@@ -4,7 +4,7 @@ function First() {
   return (
     <div className="bg-gradient-to-tl from-beige-700 to-white-500 relative">
       <img
-        src="../../public/background.jpg"
+        src="https://i.pinimg.com/736x/2e/a0/89/2ea0890014d0e4b78c59abdff3529e7a.jpg"
         alt="image"
         className="w-full h-[500px] object-cover absolute mix-blend-overlay"
       />
