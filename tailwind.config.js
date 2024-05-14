@@ -6,7 +6,13 @@ export default {
     "node_modules/flowbite-react/lib/esm/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Regular: ["Poppins-Light", "sans-serif"],
+        Medium: ["Poppins-Medium", "sans-serif"],
+        Bold: ["Poppins-ExtraBold", "sans-serif"],
+      },
+    },
   },
   plugins: [require("flowbite/plugin")],
 };

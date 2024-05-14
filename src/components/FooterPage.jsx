@@ -1,19 +1,13 @@
 import React from "react";
 import { Footer } from "flowbite-react";
-import {
-  BsFacebook,
-  BsInstagram,
-  BsTwitter,
-  BsGithub,
-  BsDribbble,
-} from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 function FooterPage() {
   return (
     <Footer container className="border border-teal-500 bg-black text-white">
       <div className="w-full max-w-7xl mx-auto mt-5 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[200px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-[200px]">
           <div className="flex flex-col">
             <div className="mb-3">
               <Link to="/" className="flex items-center">

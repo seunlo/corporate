@@ -1,13 +1,15 @@
 import React from "react";
+import First from "../components/First";
+import Second from "../components/Second";
+import Third from "../components/Third";
 
 function Home() {
   return (
-    <div className=''>
-      <img
-        src="https://colormadehappy.com/wp-content/uploads/2022/11/Christmas-Tree-Drawing-scaled-e1667860123547.jpg"
-        alt=""
-      />
-    </div>
+    <>
+      <First />
+      <Second />
+      <Third />
+    </>
   );
 }
 

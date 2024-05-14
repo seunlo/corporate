@@ -1,12 +1,9 @@
-import React from "react";
+import { useScroll, useTransform } from "framer-motion";
+import React, { useRef } from "react";
+import NewsComp from "../components/NewsComp";
 
 function News() {
-  return (
-    <img
-      src="https://colormadehappy.com/wp-content/uploads/2022/11/Christmas-Tree-Drawing-scaled-e1667860123547.jpg"
-      alt=""
-    />
-  );
+  return;
 }
 
 export default News;

@@ -116,14 +116,14 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="/faq">
+                <Link to="/about">
                   <span
                     className={`text-sm font-semibold ${
-                      pathRoute("/faq") &&
+                      pathRoute("/about") &&
                       "text-white bg-purple-700 text-sm rounded-2xl px-2"
                     }`}
                   >
-                    Faq
+                    About
                   </span>
                 </Link>
               </li>
