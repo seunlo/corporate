@@ -20,3 +20,11 @@
   src: local('Poppins-Light'),
   url('./assets/fonts/Poppins-Light.ttf') format('truetype');
 }
+
+.panel{
+  display: none;
+}
+
+.panel.active{
+  display: block;
+}
