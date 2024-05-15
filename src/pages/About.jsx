@@ -122,6 +122,7 @@
 // export default About;
 
 import React, { useState } from "react";
+import OurTeam from "../components/OurTeam";
 
 const Menu = [
   {
@@ -144,11 +145,28 @@ const Menu = [
   },
   {
     id: 3,
+    title: "Our vision",
+    image: "https://www.ulutrading.com/upload/galeri/our-vision.png",
+    content:
+      "To see Nigeria become a destination of choice and prosperity for young people and startups.",
+    color: "",
+  },
+  {
+    id: 4,
     title: "Our Mission",
     image:
       "https://www.energyquestmagazine.com/wp-content/uploads/2017/02/mission.jpg",
     content:
       "We exist to provide the required 'oxygen' for startup ideas and early-stage businesses to launch, thrive and scale. By so doing, we are building the next big thing in Nigeria!",
+    color: "",
+  },
+  {
+    id: 5,
+    title: "Affiliation",
+    image:
+      "https://www.psychologs.com/wp-content/uploads/2024/01/the-psychology-behind-need-for-affiliation.jpg",
+    content:
+      "Elaloey Foundry is a brainchild of the De Elaloey Brothers Company; an enterprise formation and investment company aimed at investing in people and transforming lives. De Elaloey Brothers operates with three strategic expressions - companies’ formation, investments and partnerships.",
     color: "",
   },
 ];
@@ -161,11 +179,13 @@ function About() {
   return (
     <>
       <div className="bg-cover h-[100px] md:h-[300px] flex items-center justify-center bg-[url('https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg')]">
-        <h1 className="text-white font-extrabold text-6xl font-Oswald">About Us</h1>
+        <h1 className="text-white font-extrabold text-6xl font-Oswald">
+          About Us
+        </h1>
       </div>
-      <div className=" flex justify-between items-center space-x-8 rounded-lg px-4 py-2 my-5 w-[450px] md:w-[600px]">
+      <div className=" flex flex-wrap rounded-lg py-2 my-5 gap-5 p-1 max-w-6xl mx-auto">
         {Menu.map((item) => (
-          <div class="border border-gray-400 rounded-lg shadow-xl w-36 hover:font-bold p-2 hover:bg-blue-200 cursor-pointer mix-blend-normal hover:scale-[1.20] duration-500 hover:w-[100px] text-center">
+          <div class="border border-gray-400 rounded-lg shadow-xl w-36 hover:font-bold p-2 cursor-pointer mix-blend-normal hover:scale-[1.20] duration-500 hover:w-[100px] text-center">
             <button
               key={item.id}
               onClick={() => handleClick(item.id)}
@@ -179,7 +199,7 @@ function About() {
           </div>
         ))}
       </div>
-      <div className="max-w-6xl mx-auto my-5">
+      <div className="max-w-6xl mx-auto my-5 mb-10">
         {Menu.map((item) => (
           <div
             key={item.id}
@@ -204,6 +224,7 @@ function About() {
           </div>
         ))}
       </div>
+      <OurTeam/>
     </>
   );
 }
