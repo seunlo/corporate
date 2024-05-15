@@ -160,10 +160,10 @@ function About() {
     content === index ? className : "";
   return (
     <>
-      <div className="bg-cover h-[300px] flex items-center justify-center bg-[url('https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg')]">
-        <h1 className="text-white font-extrabold text-6xl">About Us</h1>
+      <div className="bg-cover h-[100px] md:h-[300px] flex items-center justify-center bg-[url('https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg')]">
+        <h1 className="text-white font-extrabold text-6xl font-Oswald">About Us</h1>
       </div>
-      <div className=" flex justify-between items-center space-x-8 rounded-lg px-4 py-2 my-5 w-[600px]">
+      <div className=" flex justify-between items-center space-x-8 rounded-lg px-4 py-2 my-5 w-[450px] md:w-[600px]">
         {Menu.map((item) => (
           <div class="border border-gray-400 rounded-lg shadow-xl w-36 hover:font-bold p-2 hover:bg-blue-200 cursor-pointer mix-blend-normal hover:scale-[1.20] duration-500 hover:w-[100px] text-center">
             <button
@@ -195,10 +195,10 @@ function About() {
                 className="w-[250px] md:w-[400px] h-[200px] shadow-xl rounded-xl"
               />
               <div className="">
-                <div className="text-center font-bold text-3xl">
+                <div className="text-center font-bold text-[38px] font-Oswald text-red-500">
                   {item.title}
                 </div>
-                <div className="py-4">{item.content}</div>
+                <div className="py-4 font-montserrat">{item.content}</div>
               </div>
             </div>
           </div>

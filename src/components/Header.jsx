@@ -33,7 +33,7 @@ export default function Header() {
             <li>
               <Link to="/">
                 <span
-                  className={`p-1 text-sm font-semibold ${
+                  className={`p-1 text-xl font-Oswald ${
                     pathRoute("/") &&
                     "text-white bg-purple-700 text-sm rounded-full px-3"
                   }`}
@@ -43,26 +43,26 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link to="/news">
+              <Link to="/founders">
                 <span
-                  className={`p-1 text-sm font-semibold ${
-                    pathRoute("/news") &&
+                  className={`p-1 text-xl font-montserrat ${
+                    pathRoute("/founders") &&
                     "text-white bg-purple-700 text-sm rounded-full px-3"
                   }`}
                 >
-                  News
+                  Founders Hub
                 </span>
               </Link>
             </li>
             <li>
               <Link to="/about">
                 <span
-                  className={`p-1 text-sm font-semibold ${
+                  className={`p-1 text-xl font-palanquin ${
                     pathRoute("/about") &&
                     "text-white bg-purple-700 text-sm rounded-full px-3"
                   }`}
                 >
-                  About
+                  About us
                 </span>
               </Link>
             </li>
@@ -74,7 +74,7 @@ export default function Header() {
                     "text-white bg-purple-700 text-sm rounded-full px-3"
                   }`}
                 >
-                  Contact
+                  Contact Us
                 </span>
               </Link>
             </li>
@@ -104,14 +104,14 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="/news">
+                <Link to="/founders">
                   <span
                     className={`text-sm font-semibold ${
-                      pathRoute("/news") &&
+                      pathRoute("/founders") &&
                       "text-white bg-purple-700 text-sm rounded-2xl px-2"
                     }`}
                   >
-                    News
+                    Founders Hub
                   </span>
                 </Link>
               </li>

@@ -8,9 +8,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Regular: ["Poppins-Light", "sans-serif"],
-        Medium: ["Poppins-Medium", "sans-serif"],
-        Bold: ["Poppins-ExtraBold", "sans-serif"],
+        palanquin: ["Palanquin", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        Oswald: ["Oswald", "sans-serif"],
       },
     },
   },
