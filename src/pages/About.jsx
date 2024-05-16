@@ -183,9 +183,9 @@ function About() {
           About Us
         </h1>
       </div>
-      <div className=" flex flex-wrap rounded-lg py-2 my-5 gap-5 p-1 max-w-6xl mx-auto">
+      <div className="flex flex-wrap rounded-lg py-2 my-5 gap-5 p-1 ml-5 max-w-6xl mx-auto">
         {Menu.map((item) => (
-          <div class="border border-gray-400 rounded-lg shadow-xl w-36 hover:font-bold p-2 cursor-pointer mix-blend-normal hover:scale-[1.20] duration-500 hover:w-[100px] text-center">
+          <div class="border border-gray-400 rounded-lg shadow-md w-34 p-2 cursor-pointer mix-blend-normal hover:scale-[1.10] duration-500 text-center">
             <button
               key={item.id}
               onClick={() => handleClick(item.id)}
@@ -208,7 +208,7 @@ function About() {
               "active"
             )}`}
           >
-            <div className="flex gap-5">
+            <div className="flex flex-col md:flex-row gap-5 items-center justify-center">
               <img
                 src={`${item.image}`}
                 alt="image"

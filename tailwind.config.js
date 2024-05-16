@@ -11,6 +11,8 @@ export default {
         palanquin: ["Palanquin", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
         Oswald: ["Oswald", "sans-serif"],
+        Ubuntu: ["Ubuntu", "sans-serif"],
+        Economica: ["Economica", "sans-serif"],
       },
     },
   },

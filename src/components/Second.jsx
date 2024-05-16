@@ -14,17 +14,17 @@ function Second() {
           alt="image"
         />
       </div>
-      <div className="p-4">
-        <h2 className="text-4xl font-extrabold text-slate-200">OUR STRATEGY</h2>
+      <div className="p-4 font-Economica">
+        <h2 className="text-4xl font-extrabold font-Economica text-slate-200">OUR STRATEGY</h2>
         <div className="max-w-[590px]">
-          <p className="mt-2">
+          <p className="mt-2 mb-3 text-xl">
             We are clear on our mission and the roadmap towards delivering it.
             Thus, we are intentional about talents and the ecosystem we are
             trying to create. Our approach and strategy are simply to S.I.F
           </p>
         </div>
         <div className="">
-          <div className="">
+          <div className="font-Ubuntu mb-3">
             <span className="text-xl text-bold">SPOT</span> -{" "}
             <span>
               through our strategic partnerships and initiatives, we spot
@@ -32,7 +32,7 @@ function Second() {
               our foundry and ecosystem.
             </span>
           </div>
-          <div className="">
+          <div className="mb-3 font-montserrat">
             <span className="text-xl text-bold">INCUBATE</span> -{" "}
             <span>
               with our team of industry experts, founders and investors, we
@@ -40,7 +40,7 @@ function Second() {
               services for our cohorts and founders.
             </span>
           </div>
-          <div className="">
+          <div className="mb-3 font-palanquin">
             <span className="text-xl text-bold">FUND</span> -{" "}
             <span>
               collaborating with our partners and investors, we provide

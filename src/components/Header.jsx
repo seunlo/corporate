@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { GoBell } from "react-icons/go";
-import { IoSettingsOutline } from "react-icons/io5";
-import { BiMessage } from "react-icons/bi";
-import { MdKeyboardArrowDown } from "react-icons/md";
 
 export default function Header() {
   const path = useLocation();
@@ -22,9 +19,9 @@ export default function Header() {
         <div className="">
           <Link to="/">
             <img
-              src="https://colormadehappy.com/wp-content/uploads/2022/11/Christmas-Tree-Drawing-scaled-e1667860123547.jpg"
-              alt="swiphr"
-              className="cursor-pointer w-10 h-10"
+              src="../../public/ElaloeyF.jpeg"
+              alt="company logo"
+              className="cursor-pointer w-14 h-14"
             />
           </Link>
         </div>
@@ -33,7 +30,7 @@ export default function Header() {
             <li>
               <Link to="/">
                 <span
-                  className={`p-1 text-xl font-Oswald ${
+                  className={`p-1 text-md font-Ubuntu ${
                     pathRoute("/") &&
                     "text-white bg-purple-700 text-sm rounded-full px-3"
                   }`}
@@ -45,7 +42,7 @@ export default function Header() {
             <li>
               <Link to="/founders">
                 <span
-                  className={`p-1 text-xl font-montserrat ${
+                  className={`p-1 text-md font-Ubuntu ${
                     pathRoute("/founders") &&
                     "text-white bg-purple-700 text-sm rounded-full px-3"
                   }`}
@@ -57,7 +54,7 @@ export default function Header() {
             <li>
               <Link to="/about">
                 <span
-                  className={`p-1 text-xl font-palanquin ${
+                  className={`p-1 text-md font-Ubuntu ${
                     pathRoute("/about") &&
                     "text-white bg-purple-700 text-sm rounded-full px-3"
                   }`}
@@ -69,7 +66,7 @@ export default function Header() {
             <li>
               <Link to="/contact">
                 <span
-                  className={`p-1 text-sm font-semibold ${
+                  className={`p-1 text-md font-Ubuntu ${
                     pathRoute("/contact") &&
                     "text-white bg-purple-700 text-sm rounded-full px-3"
                   }`}
