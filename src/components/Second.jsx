@@ -20,7 +20,7 @@ function Second() {
           <p className="mt-2 mb-3 text-xl">
             We are clear on our mission and the roadmap towards delivering it.
             Thus, we are intentional about talents and the ecosystem we are
-            trying to create. Our approach and strategy are simply to S.I.F
+            trying to create. Our approach and strategy are simply to S.I.F (Economica)
           </p>
         </div>
         <div className="">
@@ -29,7 +29,7 @@ function Second() {
             <span>
               through our strategic partnerships and initiatives, we spot
               talents, innovative ideas and viable startups for adoption into
-              our foundry and ecosystem.
+              our foundry and ecosystem.(Ubuntu)
             </span>
           </div>
           <div className="mb-3 font-montserrat">
@@ -37,7 +37,7 @@ function Second() {
             <span>
               with our team of industry experts, founders and investors, we
               provide requisite mentorship, business coaching and advisory
-              services for our cohorts and founders.
+              services for our cohorts and founders. (montserrat)
             </span>
           </div>
           <div className="mb-3 font-palanquin">
@@ -45,7 +45,7 @@ function Second() {
             <span>
               collaborating with our partners and investors, we provide
               microfinance services and venture capital required to launch and
-              scale.
+              scale. (palanquin)
             </span>
           </div>
         </div>
