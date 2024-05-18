@@ -14,14 +14,14 @@ export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="border-b sticky top-0 z-50 bg-purple-200">
+    <div className="border-b sticky top-0 z-50 bg-white shadow-lg">
       <header className="flex justify-between items-center p-3 max-w-6xl mx-auto overflow-x-auto">
         <div className="">
           <Link to="/">
             <img
-              src="../../public/ElaloeyF.jpeg"
+              src="../../public/tagline.png"
               alt="company logo"
-              className="cursor-pointer w-14 h-14"
+              className="cursor-pointer w-[120px] h-[70px]"
             />
           </Link>
         </div>

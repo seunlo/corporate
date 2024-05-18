@@ -6,15 +6,15 @@ import { Link } from "react-router-dom";
 function Footer2() {
   return (
     <div className="bg-[#1A1E25]">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 font-montserrat">
         <div className="flex flex-col sm:flex-row gap-8 justify-between items-start sm:items-center">
           <div className="sm:max-w-[220px] lg:max-w-[350px]">
             <div className="max-w-[130px]">
               <Link to="/" className="">
                 <img
-                  src="../../public/ElaloeyF.jpeg"
+                  src="../../public/tagline.png"
                   alt="Company Logo"
-                  className="w-full max-w-[130px] bg-black"
+                  className="w-full max-w-[130px]"
                 />
               </Link>
             </div>
@@ -25,7 +25,9 @@ function Footer2() {
             </p>
           </div>
           <div className="mt-6 sm:mt-0 flex flex-col">
-            <h4 className="text-xl text-white font-bold mb-4">SUBSCRIBE TO NEWSLETTER</h4>
+            <h4 className="text-xl text-white font-bold mb-4 font-Ubuntu">
+              SUBSCRIBE TO NEWSLETTER
+            </h4>
             <form className="flex flex-wrap gap-4">
               <input
                 type="text"
@@ -38,7 +40,7 @@ function Footer2() {
                 placeholder="Last Name"
               />
               <input
-                type="text"
+                type="email"
                 className="form-input rounded-md py-2 text-sm w-full sm:w-auto"
                 placeholder="Email"
               />
@@ -50,18 +52,31 @@ function Footer2() {
           <div>
             <div className="flex flex-col gap-4">
               <div>
-                <h4 className="text-xl text-white font-bold mb-4">CONTACT US</h4>
+                <h4 className="text-xl text-white font-bold mb-4 font-Ubuntu">
+                  CONTACT US
+                </h4>
                 <p className="text-white text-sm font-bold">
-                  Email: <a href="mailto:contact@contact.com" className="text-white">contact@contact.com</a>
+                  Email:{" "}
+                  <a href="mailto:contact@contact.com" className="text-white">
+                    info@elaloeyfoundry.com
+                  </a>
                 </p>
               </div>
               <div>
-                <h4 className="text-xl text-white font-bold mb-4">FOLLOW US</h4>
+                <h4 className="text-xl text-white font-bold mb-4 font-Ubuntu">FOLLOW US</h4>
                 <div className="flex gap-2 items-center">
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <TiSocialFacebook className="w-10 h-10 rounded-md cursor-pointer bg-white" />
                   </a>
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <IoLogoInstagram className="w-10 h-10 rounded-md cursor-pointer bg-white" />
                   </a>
                 </div>
@@ -70,7 +85,9 @@ function Footer2() {
           </div>
         </div>
         <Footer.Divider className="my-8" />
-        <div className="text-white text-sm">&copy; {new Date().getFullYear()} Elaloey Foundry. All rights reserved</div>
+        <div className="text-white text-sm">
+          &copy; {new Date().getFullYear()} Elaloey Foundry. All rights reserved
+        </div>
       </div>
     </div>
   );
