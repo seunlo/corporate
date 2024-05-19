@@ -9,6 +9,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  background-color: #1A1E25;
+}
+
 
 .panel{
   display: none;

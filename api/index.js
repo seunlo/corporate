@@ -2,16 +2,32 @@ import express from "express";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import nodemailer from "nodemailer";
+import authRoutes from "./routes/auth.route.js";
 import cors from "cors";
 import mysql from "mysql2";
+import mongoose from "mongoose";
+import cookieParser from "cookie-parser";
 
 dotenv.config();
 
 const app = express();
 
+mongoose
+  .connect(process.env.MONGO)
+  .then(() => {
+    console.log("Connected to Mongo DB");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
+app.use(express.json());
+app.use(cookieParser());
+
+app.use("/api/auth", authRoutes);
 
 const port = process.env.PORT || 3557;
 

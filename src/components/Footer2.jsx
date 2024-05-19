@@ -2,51 +2,23 @@ import { Footer } from "flowbite-react";
 import { IoLogoInstagram } from "react-icons/io5";
 import { TiSocialFacebook } from "react-icons/ti";
 import { Link } from "react-router-dom";
-import { logo } from "../assets/images";
+import { logo, footer } from "../assets/images";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
 
 function Footer2() {
-  const [formData, setFormData] = useState({});
-  const [errorMessage, setErrorMessage] = useState(null);
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.id]: e.target.value.trim() });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-      setErrorMessage(null);
-      const res = await fetch("http://localhost:3557/send-news", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-      const data = await res.json();
-      if (data.success === false) {
-        return setErrorMessage(data.message);
-      }
-      if (res.ok) {
-        toast.success("Your Message Has Been Sent");
-      }
-    } catch (error) {
-      setErrorMessage(error.message);
-    }
-  };
   return (
-    <div className="bg-[#1A1E25]">
+    <div className="bg-gray-700">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 font-montserrat">
         <div className="flex flex-col sm:flex-row gap-8 justify-between items-start sm:items-center">
           <div className="sm:max-w-[220px] lg:max-w-[350px]">
             <div className="max-w-[130px]">
               <Link to="/">
                 <img
-                  src={logo}
+                  src={footer}
                   alt="Company Logo"
-                  className="w-full max-w-[130px] bg-white"
+                  className="w-full max-w-[180px] h-[150px]"
                 />
               </Link>
             </div>
@@ -60,14 +32,13 @@ function Footer2() {
             <h4 className="text-xl text-white font-bold mb-4 font-Ubuntu">
               SUBSCRIBE TO NEWSLETTER
             </h4>
-            <form className="flex flex-wrap gap-4" onSubmit={handleSubmit}>
+            <form className="flex flex-wrap gap-4">
               <input
                 type="text"
                 className="form-input rounded-md py-2 text-sm w-full sm:w-auto"
                 name="firstname"
                 id="firstname"
                 placeholder="First Name"
-                onChange={handleChange}
               />
               <input
                 type="text"
@@ -75,7 +46,6 @@ function Footer2() {
                 name="lastname"
                 id="lastname"
                 placeholder="Last Name"
-                onChange={handleChange}
               />
               <input
                 type="email"
@@ -83,9 +53,11 @@ function Footer2() {
                 name="email"
                 id="email"
                 placeholder="Email"
-                onChange={handleChange}
               />
-              <button type="submit" className="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-md transition-colors focus:outline-none">
+              <button
+                type="submit"
+                className="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-md transition-colors focus:outline-none"
+              >
                 Submit
               </button>
             </form>
@@ -128,7 +100,7 @@ function Footer2() {
           </div>
         </div>
         <Footer.Divider className="my-8" />
-        <div className="text-white text-sm">
+        <div className="text-white text-sm text-center">
           &copy; {new Date().getFullYear()} Elaloey Foundry. All rights reserved
         </div>
       </div>

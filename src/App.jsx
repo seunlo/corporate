@@ -8,6 +8,8 @@ import Footer2 from "./components/Footer2";
 import Register from "./pages/Register";
 import StartUp from "./pages/StartUp";
 import { ToastContainer } from "react-toastify";
+//import SignUp from "./pages/SignUp";
+//import SignIn from "./pages/SignIn";
 
 export default function App() {
   return (
@@ -18,7 +20,12 @@ export default function App() {
         <Route path="/startup" element={<StartUp />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
-        <Route path="/register" element={<Register />} />
+        {/* <Route element={<PrivateRoute />}>
+          <Route path="/admin" element={<Admin />} />
+        </Route> */}
+        {/* <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/register" element={<Register />} /> */}
       </Routes>
       {/* <FooterPage /> */}
       <ToastContainer theme="dark" />

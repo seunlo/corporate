@@ -2,18 +2,18 @@ import { Link } from "react-router-dom";
 
 function First() {
   return (
-    <div className="bg-gradient-to-tl from-beige-700 to-white-500">
+    <div className="bg-gradient-to-tl from-beige-500 to-white-200">
       <img
         src="https://i.pinimg.com/736x/2e/a0/89/2ea0890014d0e4b78c59abdff3529e7a.jpg"
         alt="image"
         className="w-full h-[500px] object-cover absolute mix-blend-overlay"
       />
       <div className="grid grid-cols-1 md:grid-cols-2 pt-10 items-center max-w-6xl mx-auto">
-        <div className="p-8 gap-8">
-          <p className="font-extrabold text-5xl">
+        <div className="p-8 gap-8 mt-10">
+          <p className="font-extrabold text-5xl text-green-300 font-Ubuntu">
             Launch and scale your startup ideas
           </p>
-          <p className="font-regular text-[18px] my-5">
+          <p className="font-regular text-[18px] my-5 text-gray-300">
             We are building the next big thing by providing startups with the
             <span className="text-red-700 font-bold"> oxygen</span> to launch,
             thrive and scale.
