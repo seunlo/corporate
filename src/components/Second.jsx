@@ -22,14 +22,17 @@ function Second() {
         </h2>
         <div className="max-w-[590px]">
           <p className="mt-2 mb-3 font-montserrat">
-            We are clear on our mission and the roadmap towards delivering it.
-            Thus, we are intentional about talents and the ecosystem we are
-            trying to create. Our approach and strategy are simply to S.I.F
+            We are clear on our mission and the roadmap to achieve it. Thus, we
+            are deliberate about talents and the ecosystem we are building. Our
+            strategic expression is to <b>S.I.F</b>
           </p>
         </div>
         <div className=" font-montserrat">
           <div className="mb-3">
-            <span><b>SPOT</b></span> -{" "}
+            <span>
+              <b>SPOT</b>
+            </span>{" "}
+            -{" "}
             <span>
               through our strategic partnerships and initiatives, we spot
               talents, innovative ideas and viable startups for adoption into
@@ -37,15 +40,22 @@ function Second() {
             </span>
           </div>
           <div className="mb-3">
-            <span><b>INCUBATE</b></span> -{" "}
             <span>
-              with our team of industry experts, founders and investors, we
-              provide requisite mentorship, business coaching and advisory
-              services for our cohorts and founders.
+              <b>INCUBATE</b>
+            </span>{" "}
+            -{" "}
+            <span>
+              with a team of industry professionals, subject matter experts and
+              founders, we provide requisite mentorship, business coaching and
+              advisory to our cohort of innovators and founders to ensure their
+              startups are market-proof and ready for launch.
             </span>
           </div>
           <div className="mb-3">
-            <span><b>FUND</b></span> -{" "}
+            <span>
+              <b>FUND</b>
+            </span>{" "}
+            -{" "}
             <span>
               collaborating with our partners and investors, we provide
               microfinance services and venture capital required to launch and

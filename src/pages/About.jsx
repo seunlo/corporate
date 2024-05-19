@@ -131,16 +131,16 @@ const Menu = [
     image:
       "https://t3.ftcdn.net/jpg/01/28/44/76/360_F_128447604_6deYSrg6bgH2F3YaoU0icdhvxNu4ReDN.jpg",
     content:
-      "Elaloey Foundry is a social enterprise and venture fund for startup ideas and early-stage businesses in Nigeria. We are passionate about spotting, nurturing and funding talents, innovative ideas and startup businesses with potential to transform Nigeria. The fund is earmarked to provide young, credible, and innovative entrepreneurs with the requisite business coaching, corporate services and funding to launch and scale their startups for the greater good of Nigeria.",
+      "Elaloey Foundry is a social enterprise and venture fund for startup ideas and early-stage businesses in Nigeria. We are passionate about spotting, incubating and funding innovative ideas and startup businesses with potential to transform Nigeria. The fund is earmarked to provide young, credible, and innovative entrepreneurs with the requisite business coaching, corporate services and funding to launch and scale their startups for the greater good of Nigeria.",
     color: "",
   },
   {
     id: 2,
-    title: "The Problem",
+    title: "The Challenge",
     image:
       "https://i0.wp.com/media.premiumtimesng.com/wp-content/files/2023/08/Problems.jpg?ssl=1",
     content:
-      "Nigeria boasts of the largest active workforce in Africa and the world by extension. With about 70% of its population being young people with creative minds (156 million), Nigeria is blessed with economic asset – a talented and active workforce with the capacity for GDP growth and economic development. Sadly, a sizeable portion of these talents are not harnessed and the business ideas and startups from this active population die prematurely due to lack of economic support and infrastructure to launch and thrive.",
+      "Nigeria boasts of the largest active workforce in Africa and the world by extension. With about 70% of its population being young people with creative minds (156 million), Nigeria is blessed with economic asset – a talented and active workforce with the capacity for GDP growth and economic development. Sadly, a sizeable portion of these talents are not harnessed and the business ideas and startups from this active population die prematurely due to lack of economic support and infrastructure to launch and thrive. ",
     color: "",
   },
   {
@@ -148,7 +148,7 @@ const Menu = [
     title: "Our vision",
     image: "https://www.ulutrading.com/upload/galeri/our-vision.png",
     content:
-      "To see Nigeria become a destination of choice and prosperity for young people and startups.",
+      "To see Nigeria become a destination of choice and prosperity for startups and young people.",
     color: "",
   },
   {
@@ -157,7 +157,7 @@ const Menu = [
     image:
       "https://www.energyquestmagazine.com/wp-content/uploads/2017/02/mission.jpg",
     content:
-      "We exist to provide the required 'oxygen' for startup ideas and early-stage businesses to launch, thrive and scale. By so doing, we are building the next big thing in Nigeria!",
+      "We exist to provide the required 'oxygen' for startup ideas and early-stage businesses to launch, scale and thrive in Nigeria",
     color: "",
   },
   {
@@ -224,7 +224,7 @@ function About() {
           </div>
         ))}
       </div>
-      <OurTeam/>
+      <OurTeam />
     </>
   );
 }

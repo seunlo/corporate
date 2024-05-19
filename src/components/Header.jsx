@@ -22,7 +22,7 @@ export default function Header() {
             <img
               src={logo}
               alt="company logo"
-              className="cursor-pointer w-[120px] h-[70px]"
+              className="cursor-pointer max-w-[110px]"
             />
           </Link>
         </div>

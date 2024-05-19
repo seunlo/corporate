@@ -3,6 +3,8 @@ import { useState } from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 import { LuPhoneCall } from "react-icons/lu";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
   const [formData, setFormData] = useState({});
@@ -35,7 +37,7 @@ function Contact() {
         return setErrorMessage(data.message);
       }
       if (res.ok) {
-        //Alert("Email has been sent");
+        toast.success("Your Message Has Been Sent");
       }
     } catch (error) {
       setErrorMessage(error.message);

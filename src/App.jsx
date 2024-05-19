@@ -7,6 +7,7 @@ import FooterPage from "./components/FooterPage";
 import Footer2 from "./components/Footer2";
 import Register from "./pages/Register";
 import StartUp from "./pages/StartUp";
+import { ToastContainer } from "react-toastify";
 
 export default function App() {
   return (
@@ -20,7 +21,8 @@ export default function App() {
         <Route path="/register" element={<Register />} />
       </Routes>
       {/* <FooterPage /> */}
-      <Footer2/>
+      <ToastContainer theme="dark" />
+      <Footer2 />
     </BrowserRouter>
   );
 }

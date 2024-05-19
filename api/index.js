@@ -13,6 +13,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
+const port = process.env.PORT || 3557;
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
+
 app.post("/send-mail", (req, res) => {
   const { fname, email, pnumber, message } = req.body;
 
@@ -36,7 +42,7 @@ app.post("/send-mail", (req, res) => {
   const mailOptions = {
     from: email,
     to: "info@elaloeyfoundry.com",
-    subject: `Mail from ${fname}(${pnumber}) `,
+    subject: `Mail from ${fname} - ${pnumber} `,
     text: message,
   };
 
@@ -56,17 +62,6 @@ app.post("/send-mail", (req, res) => {
   });
 });
 
-const connection = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USERNAME,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
-});
-
-connection.connect((err) => {
-  if (err) throw err;
-  console.log("Connected to MySQL database!");
-});
 // const db = mysql.createConnection({
 //   host: process.env.DB_HOST,
 //   user: process.env.DB_USERNAME,
@@ -76,30 +71,24 @@ connection.connect((err) => {
 // db.connect((err) => {
 //   if (err) {
 //     console.log("Could not connect to database");
-//     process.exit(1); // Exit the process with an error code
 //   }
 
 //   console.log("Connected to Mysql Database");
 // });
 
-app.post("/register", (req, res) => {
-  const { fname, email, pnumber, gender } = req.body;
-  const query =
-    "INSERT into users (full_name, email, phone, gender) VALUES(?, ?, ?, ?)";
-  db.execute(query, [fname, email, pnumber, gender], (err, result) => {
-    if (err) {
-      console.error("Error inserting into data:", err);
-      return res.status(500).json({ success: false, message: err.toString() });
-    }
+// app.post("/register", (req, res) => {
+//   const { fname, email, pnumber, gender } = req.body;
+//   const query =
+//     "INSERT into users (full_name, email, phone, gender) VALUES(?, ?, ?, ?)";
+//   db.execute(query, [fname, email, pnumber, gender], (err, result) => {
+//     if (err) {
+//       console.error("Error inserting into data:", err);
+//       return res.status(500).json({ success: false, message: err.toString() });
+//     }
 
-    console.log("Successfully registerd:", result);
-    res
-      .status(200)
-      .json({ success: true, message: "Successfully registered: " });
-  });
-});
-const port = process.env.PORT || 3557;
-
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+//     console.log("Successfully registerd:", result);
+//     res
+//       .status(200)
+//       .json({ success: true, message: "Successfully registered: " });
+//   });
+// });

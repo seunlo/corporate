@@ -12,7 +12,7 @@ function Third() {
           problems and transform Nigeria. We work with a tribe of young people
           with the right kind of VOICE that can convince our partners, investors
           and their customers. Our adoption and funding are largely based on
-          your VOICE;
+          your <b>V.O.I.C.E</b>
         </p>
       </div>
       <div className="my-5 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 max-w-6xl mx-auto gap-5">
@@ -39,7 +39,7 @@ function Third() {
           <h5 className="mb-3 font-bold">CAPABILITY</h5>
           <p className="text-xs">
             The expertise, education and experience of the founder(s) in the
-            subject
+            subject area
           </p>
         </div>
         <div class="bg-[#f7f7f7] w-[210px] md:w-[200px] h-[160px] rounded-lg shadow-md px-2.5 py-5 sm:px-4 sm:py-6 text-center opacity-1 cursor-pointer mix-blend-normal hover:scale-[1.20] duration-500 mx-auto">
