@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { GoBell } from "react-icons/go";
+import { logo } from "../assets/images";
 
 export default function Header() {
   const path = useLocation();
@@ -19,7 +20,7 @@ export default function Header() {
         <div className="">
           <Link to="/">
             <img
-              src="../../public/personal.jpeg"
+              src={logo}
               alt="company logo"
               className="cursor-pointer w-[120px] h-[70px]"
             />
@@ -40,14 +41,14 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link to="/founders">
+              <Link to="/startup">
                 <span
                   className={`p-1 text-md font-Ubuntu ${
-                    pathRoute("/founders") &&
+                    pathRoute("/startup") &&
                     "text-white bg-purple-700 text-sm rounded-full px-3"
                   }`}
                 >
-                  Founders Hub
+                  StartUp
                 </span>
               </Link>
             </li>

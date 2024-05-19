@@ -108,13 +108,14 @@ function Contact() {
               <div className="flex flex-col">
                 <p>Olu Osifeso Street Yaba, Lagos Nigeria</p>
                 <p>+234-8077-089-309</p>
+                <p>+234-7060-679-276</p>
               </div>
             </div>
             <div className="flex gap-5 p-8 items-center">
               <FaMapMarkerAlt className="w-10 h-10 md:w-14 md:h-14 border-2 border-slate-300 rounded-full p-3 text-red-500" />
               <div className="flex flex-col">
                 <p>Torkildsen Way, CM20 1AW, Harlow, Essex United Kingdom</p>
-                <p>+234-8077-089-309</p>
+                <p>+447-436-655-940</p>
               </div>
             </div>
             <div className="flex gap-5 p-8 items-center">

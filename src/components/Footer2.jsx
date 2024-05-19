@@ -2,6 +2,7 @@ import { Footer } from "flowbite-react";
 import { IoLogoInstagram } from "react-icons/io5";
 import { TiSocialFacebook } from "react-icons/ti";
 import { Link } from "react-router-dom";
+import { logo } from "../assets/images";
 
 function Footer2() {
   return (
@@ -12,7 +13,7 @@ function Footer2() {
             <div className="max-w-[130px]">
               <Link to="/" className="">
                 <img
-                  src="../../public/tagline.png"
+                  src={logo}
                   alt="Company Logo"
                   className="w-full max-w-[130px]"
                 />

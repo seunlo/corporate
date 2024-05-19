@@ -4,9 +4,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Header from "./components/Header";
 import FooterPage from "./components/FooterPage";
-import FoundersHub from "./pages/FoundersHub";
 import Footer2 from "./components/Footer2";
 import Register from "./pages/Register";
+import StartUp from "./pages/StartUp";
 
 export default function App() {
   return (
@@ -14,7 +14,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/founders" element={<FoundersHub />} />
+        <Route path="/startup" element={<StartUp />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/register" element={<Register />} />
