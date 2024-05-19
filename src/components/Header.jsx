@@ -33,22 +33,10 @@ export default function Header() {
                 <span
                   className={`p-1 text-md font-Ubuntu ${
                     pathRoute("/") &&
-                    "text-white bg-purple-700 text-sm rounded-full px-3"
+                    "text-white bg-green-300 text-sm rounded-full px-3"
                   }`}
                 >
                   Home
-                </span>
-              </Link>
-            </li>
-            <li>
-              <Link to="/startup">
-                <span
-                  className={`p-1 text-md font-Ubuntu ${
-                    pathRoute("/startup") &&
-                    "text-white bg-purple-700 text-sm rounded-full px-3"
-                  }`}
-                >
-                  StartUp
                 </span>
               </Link>
             </li>
@@ -57,19 +45,32 @@ export default function Header() {
                 <span
                   className={`p-1 text-md font-Ubuntu ${
                     pathRoute("/about") &&
-                    "text-white bg-purple-700 text-sm rounded-full px-3"
+                    "text-white bg-green-300 text-sm rounded-full px-3"
                   }`}
                 >
-                  About us
+                  About Us
                 </span>
               </Link>
             </li>
+            <li>
+              <Link to="/startup">
+                <span
+                  className={`p-1 text-md font-Ubuntu ${
+                    pathRoute("/startup") &&
+                    "text-white bg-green-300 text-sm rounded-full px-3"
+                  }`}
+                >
+                  StartUps
+                </span>
+              </Link>
+            </li>
+
             <li>
               <Link to="/contact">
                 <span
                   className={`p-1 text-md font-Ubuntu ${
                     pathRoute("/contact") &&
-                    "text-white bg-purple-700 text-sm rounded-full px-3"
+                    "text-white bg-green-300 text-sm rounded-full px-3"
                   }`}
                 >
                   Contact Us
@@ -94,22 +95,10 @@ export default function Header() {
                   <span
                     className={`text-sm font-semibold ${
                       pathRoute("/") &&
-                      "text-white bg-purple-700 text-sm rounded-2xl px-2"
+                      "text-white bg-green-300 text-sm rounded-2xl px-2"
                     }`}
                   >
                     Home
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link to="/founders">
-                  <span
-                    className={`text-sm font-semibold ${
-                      pathRoute("/founders") &&
-                      "text-white bg-purple-700 text-sm rounded-2xl px-2"
-                    }`}
-                  >
-                    Founders Hub
                   </span>
                 </Link>
               </li>
@@ -118,7 +107,7 @@ export default function Header() {
                   <span
                     className={`text-sm font-semibold ${
                       pathRoute("/about") &&
-                      "text-white bg-purple-700 text-sm rounded-2xl px-2"
+                      "text-white bg-green-300 text-sm rounded-2xl px-2"
                     }`}
                   >
                     About
@@ -126,11 +115,24 @@ export default function Header() {
                 </Link>
               </li>
               <li>
+                <Link to="/founders">
+                  <span
+                    className={`text-sm font-semibold ${
+                      pathRoute("/founders") &&
+                      "text-white bg-green-300 text-sm rounded-2xl px-2"
+                    }`}
+                  >
+                    Startups
+                  </span>
+                </Link>
+              </li>
+
+              <li>
                 <Link to="/contact">
                   <span
                     className={`text-sm font-semibold ${
                       pathRoute("/contact") &&
-                      "text-white bg-purple-700 text-sm rounded-2xl px-2"
+                      "text-white bg-green-300 text-sm rounded-2xl px-2"
                     }`}
                   >
                     Contact
