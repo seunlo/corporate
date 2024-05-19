@@ -19,7 +19,7 @@ export default function Header() {
         <div className="">
           <Link to="/">
             <img
-              src="../assets/images/tagline.png"
+              src="../../public/personal.jpeg"
               alt="company logo"
               className="cursor-pointer w-[120px] h-[70px]"
             />

@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import nodemailer from "nodemailer";
 import cors from "cors";
-import mysql from "mysql2/promise";
+import mysql from "mysql2";
 
 dotenv.config();
 
@@ -56,23 +56,17 @@ app.post("/send-mail", (req, res) => {
   });
 });
 
-(async () => {
-  try {
-    console.log("Attempting to connect to the database...");
-    const connection = await mysql.createConnection({
-      host: process.env.DB_HOST,
-      user: process.env.DB_USER,
-      password: process.env.DB_PASSWORD,
-      database: process.env.DB_NAME
-    });
-    console.log("Connected to DB");
-    await connection.end();
-  } catch (err) {
-    console.error("Error connecting to the database:", err.message);
-    console.error(err.stack); // Print the stack trace for more details
-    process.exit(1); // Exit the process to prevent further issues
-  }
-})();
+const connection = mysql.createConnection({
+  host: process.env.DB_HOST,
+  user: process.env.DB_USERNAME,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+});
+
+connection.connect((err) => {
+  if (err) throw err;
+  console.log("Connected to MySQL database!");
+});
 // const db = mysql.createConnection({
 //   host: process.env.DB_HOST,
 //   user: process.env.DB_USERNAME,
