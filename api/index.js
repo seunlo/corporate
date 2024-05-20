@@ -2,32 +2,19 @@ import express from "express";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import nodemailer from "nodemailer";
-import authRoutes from "./routes/auth.route.js";
 import cors from "cors";
 import mysql from "mysql2";
-import mongoose from "mongoose";
 import cookieParser from "cookie-parser";
 
 dotenv.config();
 
 const app = express();
 
-mongoose
-  .connect(process.env.MONGO)
-  .then(() => {
-    console.log("Connected to Mongo DB");
-  })
-  .catch((err) => {
-    console.log(err);
-  });
-
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
-
-app.use("/api/auth", authRoutes);
 
 const port = process.env.PORT || 3557;
 
@@ -78,33 +65,48 @@ app.post("/send-mail", (req, res) => {
   });
 });
 
-// const db = mysql.createConnection({
-//   host: process.env.DB_HOST,
-//   user: process.env.DB_USERNAME,
-//   password: process.env.DB_PASSWORD,
-//   database: process.env.DB_NAME,
-// });
-// db.connect((err) => {
-//   if (err) {
-//     console.log("Could not connect to database");
-//   }
+const db = mysql.createConnection({
+  host: process.env.DB_HOST,
+  user: process.env.DB_USERNAME,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+});
+db.connect((err) => {
+  if (err) {
+    console.log("Could not connect to database");
+  }
 
-//   console.log("Connected to Mysql Database");
-// });
+  console.log("Connected to Mysql Database");
+});
 
-// app.post("/register", (req, res) => {
-//   const { fname, email, pnumber, gender } = req.body;
-//   const query =
-//     "INSERT into users (full_name, email, phone, gender) VALUES(?, ?, ?, ?)";
-//   db.execute(query, [fname, email, pnumber, gender], (err, result) => {
-//     if (err) {
-//       console.error("Error inserting into data:", err);
-//       return res.status(500).json({ success: false, message: err.toString() });
-//     }
+app.post("/register", (req, res) => {
+  // Fields coming from the registrattion form
+  const { fname, email, pnumber, gender } = req.body;
+  if (!fname || !email || !pnumber || !gender) {
+    return res
+      .status(400)
+      .json({ success: false, message: "All fields are required" });
+  }
+  const query =
+    "INSERT INTO users (full_name, email, phone, gender) VALUES(?, ?, ?, ?)"; // data field should change to the form fields and arranged in the same order for insertion
+  db.execute(query, [fname, email, pnumber, gender], (err, result) => {
+    if (err) {
+      console.error("Error inserting into data:", err);
+      return res
+        .status(500)
+        .json({ success: false, message: "Database error: " + err.message });
+    }
+    console.log("Successfully registered:", result);
+    res.status(200).json({ success: true, message: "Successfully registered" });
+  });
+});
 
-//     console.log("Successfully registerd:", result);
-//     res
-//       .status(200)
-//       .json({ success: true, message: "Successfully registered: " });
-//   });
-// });
+app.get("/fetchUsers", (req, res) => {
+  const sql = "SELECT * FROM users";
+  db.execute(sql, (err, results) => {
+    if (err) {
+      return res.status(500).send(err);
+    }
+    res.json(results);
+  });
+});

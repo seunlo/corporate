@@ -191,7 +191,7 @@ function About() {
               onClick={() => handleClick(item.id)}
               className={`${checkContent(
                 item.id,
-                "bg-white px-2 py-1 rounded-md text-indigo-600"
+                "bg-green-300 px-2 py-1 rounded-md text-white"
               )}`}
             >
               {item.title}

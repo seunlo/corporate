@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { GoBell } from "react-icons/go";
-import { logo, footer } from "../assets/images";
+import { logo, footer, header } from "../assets/images";
 
 export default function Header() {
   const path = useLocation();
@@ -15,14 +15,14 @@ export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="border-b sticky top-0 z-50 bg-gray-700 shadow-lg">
+    <div className="border-b sticky top-0 z-50 bg-white shadow-lg">
       <header className="flex justify-between items-center p-3 max-w-6xl mx-auto overflow-x-auto">
         <div className="">
           <Link to="/">
             <img
-              src={footer}
+              src={header}
               alt="company logo"
-              className="cursor-pointer h-[80px]"
+              className="cursor-pointer h-[50px]"
             />
           </Link>
         </div>

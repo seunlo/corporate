@@ -50,7 +50,7 @@ function Contact() {
           Contact Us
         </h1>
       </div>
-      <div className="max-w-6xl mx-auto shadow-2xl my-5 flex flex-col md:flex-row">
+      <div className="max-w-6xl mx-auto shadow-2xl my-5 flex flex-col md:flex-row text-gray-300">
         <div className="flex-1 p-8">
           <h1 className="text-3xl font-bold my-5 font-Ubuntu">Get in touch</h1>
           <div className="">
@@ -85,7 +85,7 @@ function Contact() {
                 onChange={handleChange}
                 placeholder="Message"
                 rows="5"
-                className="mb-5 rounded-md border border-slate-300"
+                className="mb-5 rounded-md border border-slate-300 text-black"
               ></textarea>
               <button
                 type="submit"

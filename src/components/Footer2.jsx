@@ -2,7 +2,7 @@ import { Footer } from "flowbite-react";
 import { IoLogoInstagram } from "react-icons/io5";
 import { TiSocialFacebook } from "react-icons/ti";
 import { Link } from "react-router-dom";
-import { logo, footer } from "../assets/images";
+import { logo, footer, header } from "../assets/images";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
@@ -10,7 +10,7 @@ import { useState } from "react";
 function Footer2() {
   return (
     <div className="bg-gray-700">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 font-montserrat">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-2 font-montserrat">
         <div className="flex flex-col sm:flex-row gap-8 justify-between items-start sm:items-center">
           <div className="sm:max-w-[220px] lg:max-w-[350px]">
             <div className="max-w-[130px]">
@@ -28,53 +28,27 @@ function Footer2() {
               scale
             </p>
           </div>
-          <div className="mt-6 sm:mt-0 flex flex-col max-w-[400px]">
-            <h4 className="text-xl text-white font-bold mb-4 font-Ubuntu">
-              SUBSCRIBE TO NEWSLETTER
-            </h4>
-            <form className="flex flex-wrap gap-4">
-              <input
-                type="text"
-                className="form-input rounded-md py-2 text-sm w-full sm:w-auto"
-                name="firstname"
-                id="firstname"
-                placeholder="First Name"
-              />
-              <input
-                type="text"
-                className="form-input rounded-md py-2 text-sm w-full sm:w-auto"
-                name="lastname"
-                id="lastname"
-                placeholder="Last Name"
-              />
-              <input
-                type="email"
-                className="form-input rounded-md py-2 text-sm w-full sm:w-auto"
-                name="email"
-                id="email"
-                placeholder="Email"
-              />
-              <button
-                type="submit"
-                className="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-md transition-colors focus:outline-none"
-              >
-                Submit
-              </button>
-            </form>
+          <div className="mt-6 sm:mt-0 flex flex-col max-w-[400px] text-white">
+            <div>
+              <h4 className="text-xl font-bold mb-4 font-Ubuntu">CONTACT US</h4>
+
+              <div className="flex items-center gap-5">
+                <p>Telephone Number:</p>
+                <div className="">
+                  <p>+234-8077-089-309</p>
+                  <p>+234-7060-679-276</p>
+                </div>
+              </div>
+              <p className="text-white text-sm font-bold mt-5">
+                Email:{" "}
+                <a href="mailto:contact@contact.com" className="text-white">
+                  info@elaloeyfoundry.com
+                </a>
+              </p>
+            </div>
           </div>
           <div>
             <div className="flex flex-col gap-4">
-              <div>
-                <h4 className="text-xl text-white font-bold mb-4 font-Ubuntu">
-                  CONTACT US
-                </h4>
-                <p className="text-white text-sm font-bold">
-                  Email:{" "}
-                  <a href="mailto:contact@contact.com" className="text-white">
-                    info@elaloeyfoundry.com
-                  </a>
-                </p>
-              </div>
               <div>
                 <h4 className="text-xl text-white font-bold mb-4 font-Ubuntu">
                   FOLLOW US
@@ -94,12 +68,26 @@ function Footer2() {
                   >
                     <IoLogoInstagram className="w-10 h-10 rounded-md cursor-pointer bg-white" />
                   </a>
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <IoLogoInstagram className="w-10 h-10 rounded-md cursor-pointer bg-white" />
+                  </a>
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <IoLogoInstagram className="w-10 h-10 rounded-md cursor-pointer bg-white" />
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <Footer.Divider className="my-8" />
+        <Footer.Divider className="" />
         <div className="text-white text-sm text-center">
           &copy; {new Date().getFullYear()} Elaloey Foundry. All rights reserved
         </div>

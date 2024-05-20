@@ -8,8 +8,12 @@ import Footer2 from "./components/Footer2";
 import Register from "./pages/Register";
 import StartUp from "./pages/StartUp";
 import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 //import SignUp from "./pages/SignUp";
-//import SignIn from "./pages/SignIn";
+import SignIn from "./pages/SignIn";
+import ForgotPassword from "./pages/ForgotPassword";
+import Admin from "./pages/Admin";
+import PrivateRoute from "./components/PrivateRoute";
 
 export default function App() {
   return (
@@ -17,18 +21,29 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/admin" element={<PrivateRoute />}>
+          <Route path="/admin" element={<Admin />} />
+        </Route>
         <Route path="/startup" element={<StartUp />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
-        {/* <Route element={<PrivateRoute />}>
-          <Route path="/admin" element={<Admin />} />
-        </Route> */}
-        {/* <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        {/* <Route path="/sign-up" element={<SignUp />} /> */}
         <Route path="/sign-in" element={<SignIn />} />
-        <Route path="/register" element={<Register />} /> */}
       </Routes>
-      {/* <FooterPage /> */}
-      <ToastContainer theme="dark" />
+      <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       <Footer2 />
     </BrowserRouter>
   );

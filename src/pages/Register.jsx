@@ -1,12 +1,18 @@
 import { Alert, Select } from "flowbite-react";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 function Register() {
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState({
+    fname: '',
+    email: '',
+    pnumber: '',
+    gender: '',
+  });
   const [errorMessage, setErrorMessage] = useState(null);
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.id]: e.target.value.trim() });
+    setFormData({ ...formData, [e.target.name]: e.target.value.trim() });
   };
 
   const handleSubmit = async (e) => {
@@ -32,7 +38,7 @@ function Register() {
         return setErrorMessage(data.message);
       }
       if (res.ok) {
-        //Alert("Email has been sent");
+        toast.success("Thank you for your registration");
       }
     } catch (error) {
       setErrorMessage(error.message);
@@ -51,6 +57,7 @@ function Register() {
             type="text"
             name="fname"
             id="fname"
+            value={formData.fname}
             onChange={handleChange}
             placeholder="Full Name"
             className="mb-5 rounded-md py-6 border border-slate-300"
@@ -59,6 +66,7 @@ function Register() {
             type="email"
             name="email"
             id="email"
+            value={formData.email}
             onChange={handleChange}
             placeholder="Email"
             className="mb-5 rounded-md py-6 border border-slate-300"
@@ -67,20 +75,23 @@ function Register() {
             type="number"
             name="pnumber"
             id="pnumber"
+            value={formData.pnumber}
             onChange={handleChange}
             placeholder="Phone"
             className="mb-5 rounded-md py-6 border border-slate-300"
           />
-          <Select
+          <select
             name="gender"
-            onChange={(e) =>
-              setFormData({ ...formData, category: e.target.value })
-            }
+            value={formData.gender}
+            onChange={handleChange}
+            className="mb-5 rounded-md py-6 border border-slate-300"
           >
-            <option value="">Select Gender</option>
+            <option value="" disabled>
+              Select Gender
+            </option>
             <option value="male">Male</option>
             <option value="female">Female</option>
-          </Select>
+          </select>
 
           <button
             type="submit"
