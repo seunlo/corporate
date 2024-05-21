@@ -2,8 +2,9 @@ import Carousel from "../components/Carousel";
 import First from "../components/First";
 import Second from "../components/Second";
 import Third from "../components/Third";
+import { bird, desert } from "../assets/images";
 
-const slides = ["../../public/desert.jpg", "../../public/bird.jpg"];
+const slides = [bird, desert];
 
 function Home() {
   return (
