@@ -1,13 +1,18 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getAuth } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import * as XLSX from "xlsx";
 
 function Admin() {
+  const auth = getAuth();
+  const [formData, setFormData] = useState({
+    name: auth.currentUser.displayName,
+  });
+  const { name } = formData;
   const [showTable, setShowTable] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [usersPerPage] = useState(4);
-  const auth = getAuth();
+
   const navigate = useNavigate();
 
   const onLogout = () => {
@@ -85,8 +90,13 @@ function Admin() {
 
   return (
     <>
+      <div className="bg-cover h-[100px] sm:h-[200px] flex items-center justify-center bg-[url('https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg')]">
+        <h1 className="text-white font-extrabold text-6xl font-Oswald">
+          Admin Page
+        </h1>
+      </div>
       <section className="max-w-6xl mx-auto flex justify-center items-center flex-col text-gray-300">
-        <h1 className="text-3xl text-center mt-6 font-bold">Admin Page</h1>
+        <h1 className="text-3xl text-center mt-6 font-bold">Welcome {name}</h1>
         <div className="flex justify-between whitespace-nowrap text-sm sm:text-lg my-6 gap-3">
           <div
             onClick={onLogout}
@@ -94,13 +104,6 @@ function Admin() {
             aria-label="Sign out"
           >
             Sign out
-          </div>
-          <div
-            onClick={onChangePassword}
-            className="text-gray-300 hover:text-blue-800 transition duration-200 ease-in-out cursor-pointer text-center bg-green-500 w-38 h-12 p-2 rounded-full"
-            aria-label="Change Password"
-          >
-            Change Password
           </div>
           <div
             onClick={onViewReg}

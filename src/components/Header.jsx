@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { GoBell } from "react-icons/go";
-import { logo, footer, header } from "../assets/images";
+import { header } from "../assets/images";
 
 export default function Header() {
   const path = useLocation();
@@ -33,7 +32,7 @@ export default function Header() {
                 <span
                   className={`p-1 text-md font-Ubuntu ${
                     pathRoute("/") &&
-                    "text-white bg-green-300 text-sm rounded-full px-3"
+                    "text-white bg-green-600 text-sm rounded-lg px-3"
                   }`}
                 >
                   Home
@@ -45,10 +44,10 @@ export default function Header() {
                 <span
                   className={`p-1 text-md font-Ubuntu ${
                     pathRoute("/about") &&
-                    "text-white bg-green-300 text-sm rounded-full px-3"
+                    "text-white bg-green-600 text-sm rounded-lg px-3"
                   }`}
                 >
-                  About Us
+                  About us
                 </span>
               </Link>
             </li>
@@ -57,10 +56,10 @@ export default function Header() {
                 <span
                   className={`p-1 text-md font-Ubuntu ${
                     pathRoute("/startup") &&
-                    "text-white bg-green-300 text-sm rounded-full px-3"
+                    "text-white bg-green-600 text-sm rounded-lg px-3"
                   }`}
                 >
-                  StartUps
+                  Startups
                 </span>
               </Link>
             </li>
@@ -70,10 +69,10 @@ export default function Header() {
                 <span
                   className={`p-1 text-md font-Ubuntu ${
                     pathRoute("/contact") &&
-                    "text-white bg-green-300 text-sm rounded-full px-3"
+                    "text-white bg-green-600 text-sm rounded-lg px-3"
                   }`}
                 >
-                  Contact Us
+                  Contact us
                 </span>
               </Link>
             </li>
@@ -95,7 +94,7 @@ export default function Header() {
                   <span
                     className={`text-sm font-semibold ${
                       pathRoute("/") &&
-                      "text-white bg-green-300 text-sm rounded-2xl px-2"
+                      "text-white bg-green-600 text-sm rounded-lg py-1 px-2"
                     }`}
                   >
                     Home
@@ -107,10 +106,10 @@ export default function Header() {
                   <span
                     className={`text-sm font-semibold ${
                       pathRoute("/about") &&
-                      "text-white bg-green-300 text-sm rounded-2xl px-2"
+                      "text-white bg-green-600 text-sm rounded-lg py-1 px-2"
                     }`}
                   >
-                    About
+                    About us
                   </span>
                 </Link>
               </li>
@@ -119,7 +118,7 @@ export default function Header() {
                   <span
                     className={`text-sm font-semibold ${
                       pathRoute("/founders") &&
-                      "text-white bg-green-300 text-sm rounded-2xl px-2"
+                      "text-white bg-green-600 text-sm rounded-lg py-1 px-2"
                     }`}
                   >
                     Startups
@@ -132,10 +131,10 @@ export default function Header() {
                   <span
                     className={`text-sm font-semibold ${
                       pathRoute("/contact") &&
-                      "text-white bg-green-300 text-sm rounded-2xl px-2"
+                      "text-white bg-green-600 text-sm rounded-lg py-1 px-2"
                     }`}
                   >
-                    Contact
+                    Contact us
                   </span>
                 </Link>
               </li>

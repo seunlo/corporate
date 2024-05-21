@@ -4,7 +4,7 @@ function Second() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 pt-10 items-center max-w-6xl mx-auto gap-5">
       <div className="p-4 font-Economica">
-        <h2 className="text-4xl font-extrabold font-Ubuntu text-green-300">
+        <h2 className="text-4xl font-extrabold font-Ubuntu text-green-600">
           How We Do It
         </h2>
         <div className="max-w-[590px]">
