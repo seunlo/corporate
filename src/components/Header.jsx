@@ -32,7 +32,7 @@ export default function Header() {
                 <span
                   className={`p-1 text-md font-Ubuntu ${
                     pathRoute("/") &&
-                    "text-white bg-green-600 text-sm rounded-lg px-3"
+                    "text-white bg-green-500 text-sm rounded-lg px-3"
                   }`}
                 >
                   Home
@@ -44,7 +44,7 @@ export default function Header() {
                 <span
                   className={`p-1 text-md font-Ubuntu ${
                     pathRoute("/about") &&
-                    "text-white bg-green-600 text-sm rounded-lg px-3"
+                    "text-white bg-green-500 text-sm rounded-lg px-3"
                   }`}
                 >
                   About us
@@ -56,7 +56,7 @@ export default function Header() {
                 <span
                   className={`p-1 text-md font-Ubuntu ${
                     pathRoute("/startup") &&
-                    "text-white bg-green-600 text-sm rounded-lg px-3"
+                    "text-white bg-green-500 text-sm rounded-lg px-3"
                   }`}
                 >
                   Startups
@@ -69,7 +69,7 @@ export default function Header() {
                 <span
                   className={`p-1 text-md font-Ubuntu ${
                     pathRoute("/contact") &&
-                    "text-white bg-green-600 text-sm rounded-lg px-3"
+                    "text-white bg-green-500 text-sm rounded-lg px-3"
                   }`}
                 >
                   Contact us
@@ -94,7 +94,7 @@ export default function Header() {
                   <span
                     className={`text-sm font-semibold ${
                       pathRoute("/") &&
-                      "text-white bg-green-600 text-sm rounded-lg py-1 px-2"
+                      "text-white bg-green-500 text-sm rounded-lg py-1 px-2"
                     }`}
                   >
                     Home
@@ -106,7 +106,7 @@ export default function Header() {
                   <span
                     className={`text-sm font-semibold ${
                       pathRoute("/about") &&
-                      "text-white bg-green-600 text-sm rounded-lg py-1 px-2"
+                      "text-white bg-green-500 text-sm rounded-lg py-1 px-2"
                     }`}
                   >
                     About us
@@ -118,7 +118,7 @@ export default function Header() {
                   <span
                     className={`text-sm font-semibold ${
                       pathRoute("/founders") &&
-                      "text-white bg-green-600 text-sm rounded-lg py-1 px-2"
+                      "text-white bg-green-500 text-sm rounded-lg py-1 px-2"
                     }`}
                   >
                     Startups
@@ -131,7 +131,7 @@ export default function Header() {
                   <span
                     className={`text-sm font-semibold ${
                       pathRoute("/contact") &&
-                      "text-white bg-green-600 text-sm rounded-lg py-1 px-2"
+                      "text-white bg-green-500 text-sm rounded-lg py-1 px-2"
                     }`}
                   >
                     Contact us

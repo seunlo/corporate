@@ -5,10 +5,10 @@ function OurTeam() {
   return (
     <>
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-center text-green-600 text-[36px] font-bold font-Oswald">
+      <h2 className="text-3xl sm:text-4xl font-extrabold font-Ubuntu text-green-500 text-center">
           Our Team
-        </h1>
-        <p className="p-6 font-montserrat text-gray-300">
+        </h2>
+        <p className="p-6 font-montserrat text-gray-300 text-[14px]">
           We are blessed with the right 3H&#39;s (heads, hearts and hands) in the
           world to birth your dreams and ideas. Our team comprise of industry
           experts, founders and investors who are committed to seeing startup

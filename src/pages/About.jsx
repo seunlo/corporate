@@ -69,10 +69,10 @@ const WhoWeAre = () => (
       className="w-[250px] md:w-[400px] h-[200px] shadow-xl rounded-xl"
     />
     <div>
-      <p className="text-center font-bold text-[30px] font-Oswald text-green-600">
+      <h2 className="text-3xl sm:text-4xl font-extrabold font-Ubuntu text-green-500 text-center">
         Who We Are
-      </p>
-      <p className="py-4 font-montserrat text-gray-300">
+      </h2>
+      <p className="py-4 font-montserrat text-[14px] text-gray-300">
         Elaloey Foundry is a social enterprise and venture fund for startup
         ideas and early-stage businesses in Nigeria. We are passionate about
         spotting, incubating, and funding innovative ideas and startup
@@ -86,12 +86,12 @@ const WhoWeAre = () => (
 );
 
 const Affiliation = () => (
-  <div className="flex flex-col md:flex-row gap-5 md:items-start items-center justify-center mt-2">
+  <div className="flex flex-col md:flex-row gap-5 md:items-start items-center justify-center mt-5">
     <div>
-      <p className="text-center font-bold text-[30px] font-Oswald text-green-600">
+    <h2 className="text-3xl sm:text-4xl font-extrabold font-Ubuntu text-green-500 text-center">
         Affiliation
-      </p>
-      <p className="py-4 font-montserrat text-gray-300">
+      </h2>
+      <p className="py-4 font-montserrat text-gray-300 text-[14px]">
         Elaloey Foundry is a brainchild of the De Elaloey Brothers Company; an
         enterprise formation and investment company aimed at investing in people
         and transforming lives. De Elaloey Brothers operates with three
@@ -115,10 +115,10 @@ const Challenge = () => (
       className="w-[250px] md:w-[400px] h-[200px] shadow-xl rounded-xl"
     />
     <div>
-      <p className="text-center font-bold text-[30px] font-Oswald text-green-600">
+    <h2 className="text-3xl sm:text-4xl font-extrabold font-Ubuntu text-green-500 text-center">
         The Challenge
-      </p>
-      <p className="py-4 font-montserrat text-gray-300">
+      </h2>
+      <p className="py-4 font-montserrat text-gray-300 text-[14px]">
         Nigeria boasts of the largest active workforce in Africa and the world
         by extension. With about 70% of its population being young people with
         creative minds (156 million), Nigeria is blessed with economic asset – a
@@ -143,9 +143,9 @@ const VisionMission = () => (
         />
       </div>
       <div className="flex-1 text-center md:text-left">
-        <h4 className="text-2xl font-bold mb-1 font-Ubuntu text-green-600">
+      <h2 className="text-2xl sm:text-3xl font-Ubuntu text-green-500 text-center">
           Our Vision
-        </h4>
+        </h2>
         <p>
           To see Nigeria become a destination of choice and prosperity for
           startups and young people.
@@ -161,11 +161,11 @@ const VisionMission = () => (
         />
       </div>
       <div className="flex-1 text-center md:text-left">
-        <h4 className="text-2xl font-bold mb-1 font-Ubuntu text-green-600">
+      <h2 className="text-2xl sm:text-3xl font-Ubuntu text-green-500 text-center">
           Our Mission
-        </h4>
+        </h2>
         <p>
-          We exist to provide the required 'oxygen' for startup ideas and
+          We exist to provide the required <b>oxygen</b> for startup ideas and
           early-stage businesses to launch, scale, and thrive in Nigeria.
         </p>
       </div>

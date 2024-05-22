@@ -2,16 +2,16 @@ import { Footer } from "flowbite-react";
 import { IoLogoInstagram } from "react-icons/io5";
 import { TiSocialFacebook } from "react-icons/ti";
 import { Link } from "react-router-dom";
-import { footer, footer2 } from "../assets/images";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { useState } from "react";
+import { footer } from "../assets/images";
+import { LuPhoneCall } from "react-icons/lu";
+import { PiWhatsappLogoThin } from "react-icons/pi";
+import { IoMailOutline } from "react-icons/io5";
 
 function Footer2() {
   return (
     <div className="bg-gray-600">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 font-montserrat">
-        <div className="flex flex-col sm:flex-row gap-8 justify-between items-start sm:items-center">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 font-montserrat">
+        <div className="flex flex-col sm:flex-row justify-between items-center sm:items-center gap-8 lg:gap-0">
           <div className="sm:max-w-[220px] lg:max-w-[350px]">
             <div className="max-w-[130px]">
               <Link to="/">
@@ -23,37 +23,46 @@ function Footer2() {
               </Link>
             </div>
             <p className="text-[12px] text-white mt-2">
-              LAUNCH AND SCALE YOUR STARTUP IDEAS; We provide the required
+              We provide the required
               <b> oxygen</b> for startup ideas and early-stage businesses to
               launch, thrive and scale.
             </p>
           </div>
-          <div className="flex flex-col max-w-[400px] text-white">
+          <div className="flex flex-col max-w-[400px] text-white sm:mx-auto lg:mx-0">
             <div>
-              <h4 className="text-md md:text-2xl font-bold mb-4 font-Ubuntu text-center text-green-600">CONTACT US</h4>
+              <h4 className="text-md md:text-xl text-center text-green-500 font-bold mb-4 font-Ubuntu">
+                CONTACT US
+              </h4>
 
-              <div className="flex flex-col lg:flex-row items-center gap-5 sm:gap-2 text-[12px]">
-                <p>Telephone Number:</p>
-                <div className="">
-                  <p>+234-8077-089-309</p>
-                  <p>+234-7060-679-276</p>
-                </div>
+              <div className="flex gap-5 items-center">
+                <LuPhoneCall className="w-5 h-5" />
+                <p>+234-7060-679-276</p>
               </div>
-              <p className="text-white text-sm font-bold mt-5 text-[12px]">
-                Email:{" "}
-                <a href="mailto:info@elaloeyfoundry.com" className="text-white">
-                  info@elaloeyfoundry.com
-                </a>
-              </p>
+              <div className="flex gap-5 items-center">
+                <PiWhatsappLogoThin className="w-5 h-5" />
+                <p>+234-8077-089-309</p>
+              </div>
+
+              <div className="flex gap-5 items-center">
+                <IoMailOutline className="w-5 h-5" />
+                <p className="text-white text-sm font-bold text-[12px]">
+                  <a
+                    href="mailto:info@elaloeyfoundry.com"
+                    className="text-white"
+                  >
+                    info@elaloeyfoundry.com
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
-          <div>
+          <div className="sm:mx-auto lg:mx-0">
             <div className="flex flex-col gap-4">
               <div>
-                <h4 className="text-md md:text-2xl text-center text-green-600 font-bold mb-4 font-Ubuntu">
-                  FOLLOW US
+                <h4 className="text-md md:text-xl text-center text-green-500 font-bold mb-4 font-Ubuntu">
+                  STAY CONNECTED
                 </h4>
-                <div className="flex gap-2 items-center">
+                <div className="flex justify-center gap-2 items-center">
                   <a
                     href="https://facebook.com"
                     target="_blank"

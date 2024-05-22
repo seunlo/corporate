@@ -52,7 +52,7 @@ function Contact() {
       </div>
       <div className="max-w-6xl mx-auto shadow-2xl my-5 flex flex-col md:flex-row text-gray-300">
         <div className="flex-1 p-8">
-          <h1 className="text-3xl font-bold my-5 font-Ubuntu text-green-600">
+          <h1 className="text-3xl font-bold my-5 font-Ubuntu text-green-500">
             Get in touch
           </h1>
           <div className="">
@@ -91,7 +91,7 @@ function Contact() {
               ></textarea>
               <button
                 type="submit"
-                className="bg-red-500 rounded-tr-2xl rounded-bl-2xl text-xl md:text-2xl text-white p-4 font-bold font-Ubuntu"
+                className="inline-flex items-center justify-center px-5 py-3 border border-green-500 rounded-tl-2xl rounded-br-2xl text-base font-medium rounded-md text-white hover:bg-green-500"
               >
                 Submit
               </button>
@@ -105,12 +105,12 @@ function Contact() {
         </div>
         <div className="border border-r-0"></div>
         <div className="flex-1 p-8">
-          <h1 className="text-3xl font-bold my-5 font-Ubuntu text-green-600">
+          <h1 className="text-3xl font-bold my-5 font-Ubuntu text-green-500">
             Our Presence
           </h1>
           <div className="font-montserrat">
             <div className="flex gap-5 p-8 items-center">
-              <FaMapMarkerAlt className="w-10 h-10 md:w-14 md:h-14 border-2 border-green-600 rounded-full p-3 text-white" />
+              <FaMapMarkerAlt className="w-10 h-10 md:w-14 md:h-14 border-2 border-green-500 rounded-full p-3 text-white" />
               <div className="flex flex-col">
                 <p>Olu Osifeso Street Yaba, Lagos Nigeria</p>
                 <p>+234-8077-089-309</p>
@@ -118,21 +118,21 @@ function Contact() {
               </div>
             </div>
             <div className="flex gap-5 p-8 items-center">
-              <FaMapMarkerAlt className="w-10 h-10 md:w-14 md:h-14 border-2 border-green-600 rounded-full p-3 text-white" />
+              <FaMapMarkerAlt className="w-10 h-10 md:w-14 md:h-14 border-2 border-green-500 rounded-full p-3 text-white" />
               <div className="flex flex-col">
                 <p>Torkildsen Way, CM20 1AW, Harlow, Essex United Kingdom</p>
                 <p>+447-436-655-940</p>
               </div>
             </div>
             <div className="flex gap-5 p-8 items-center">
-              <FaMapMarkerAlt className="w-10 h-10 md:w-14 md:h-14 border-2 border-green-600 rounded-full p-3 text-white" />
+              <FaMapMarkerAlt className="w-10 h-10 md:w-14 md:h-14 border-2 border-green-500 rounded-full p-3 text-white" />
               <div className="flex flex-col">
                 <p>Legacy boulevard SE Calgary. T2X 2B9 Canada</p>
                 <p>+19-055-981-853</p>
               </div>
             </div>
             <div className="flex gap-5 p-8 items-center">
-              <FaRegEnvelope className="w-10 h-10 md:w-14 md:h-14 border-2 border-green-600 rounded-full p-3 text-white" />
+              <FaRegEnvelope className="w-10 h-10 md:w-14 md:h-14 border-2 border-green-500 rounded-full p-3 text-white" />
               <p>info@elaloeyfoundry.com</p>
             </div>
             {/* <div className="flex gap-5 p-8 items-center">

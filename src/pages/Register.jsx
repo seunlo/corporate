@@ -4,10 +4,10 @@ import { toast } from "react-toastify";
 
 function Register() {
   const [formData, setFormData] = useState({
-    fname: '',
-    email: '',
-    pnumber: '',
-    gender: '',
+    fname: "",
+    email: "",
+    pnumber: "",
+    gender: "",
   });
   const [errorMessage, setErrorMessage] = useState(null);
 
@@ -46,12 +46,12 @@ function Register() {
   };
   return (
     <>
-      <div className="bg-cover h-[100px] md:h-[300px] flex items-center justify-center bg-[url('https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg')]">
+      <div className="bg-cover h-[100px] md:h-[200px] flex items-center justify-center bg-[url('https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg')]">
         <h1 className="text-white font-extrabold text-6xl font-Oswald">
           Registration Page
         </h1>
       </div>
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto py-5">
         <form className="flex flex-col" onSubmit={handleSubmit}>
           <input
             type="text"
@@ -60,7 +60,7 @@ function Register() {
             value={formData.fname}
             onChange={handleChange}
             placeholder="Full Name"
-            className="mb-5 rounded-md py-6 border border-slate-300"
+            className="rounded-md py-6 border border-slate-300"
           />
           <input
             type="email"
@@ -69,7 +69,7 @@ function Register() {
             value={formData.email}
             onChange={handleChange}
             placeholder="Email"
-            className="mb-5 rounded-md py-6 border border-slate-300"
+            className="my-2 rounded-md py-6 border border-slate-300"
           />
           <input
             type="number"
@@ -78,13 +78,13 @@ function Register() {
             value={formData.pnumber}
             onChange={handleChange}
             placeholder="Phone"
-            className="mb-5 rounded-md py-6 border border-slate-300"
+            className="rounded-md py-6 border border-slate-300"
           />
           <select
             name="gender"
             value={formData.gender}
             onChange={handleChange}
-            className="mb-5 rounded-md py-6 border border-slate-300"
+            className="my-2 rounded-md py-6 border border-slate-300"
           >
             <option value="" disabled>
               Select Gender
@@ -95,7 +95,7 @@ function Register() {
 
           <button
             type="submit"
-            className="bg-red-500 rounded-tr-2xl rounded-bl-2xl text-xl md:text-2xl text-white p-4 font-bold"
+            className="inline-flex items-center justify-center px-5 py-3 border border-green-500 rounded-tl-2xl rounded-br-2xl text-base font-medium rounded-md text-white hover:bg-green-500"
           >
             Register
           </button>
