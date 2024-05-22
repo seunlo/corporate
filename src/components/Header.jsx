@@ -21,7 +21,7 @@ export default function Header() {
             <img
               src={header}
               alt="company logo"
-              className="cursor-pointer h-[50px]"
+              className="cursor-pointer h-[70px]"
             />
           </Link>
         </div>
