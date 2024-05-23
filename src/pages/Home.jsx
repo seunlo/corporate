@@ -1,6 +1,7 @@
 import Carousel from "../components/Carousel";
 import First from "../components/First";
 import Second from "../components/Second";
+import Karousel from "../components/Karousel";
 import Color from "../components/Color";
 import Third from "../components/Third";
 import { bird, desert, banner1, banner2, banner3 } from "../assets/images";
@@ -24,11 +25,15 @@ function Home() {
   };
   return (
     <>
+      {/* <Karousel /> */}
       <div className="">
         <Carousel autoSlide={true}>
           {[
             ...slides.map((s) => (
-              <img src={s} className="object-contain h-screen" />
+              <img
+                src={s}
+                className="object-fit min-h-[300px] md:min-h-[600px]"
+              />
             )),
           ]}
         </Carousel>
