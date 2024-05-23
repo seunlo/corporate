@@ -14,6 +14,10 @@ export default {
         Ubuntu: ["Ubuntu", "sans-serif"],
         Economica: ["Economica", "sans-serif"],
       },
+      colors: {
+        forestGreen: "#228B22",
+        limeGreen: "#32CD32",
+      },
     },
   },
   plugins: [require("flowbite/plugin"), require("@tailwindcss/forms")],

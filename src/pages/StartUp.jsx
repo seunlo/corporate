@@ -25,7 +25,7 @@ function StartUp() {
       <div className="py-12 text-gray-300 font-montserrat text-[14px]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-extrabold text-green-500 font-Ubuntu sm:text-4xl">
+            <h2 className="text-3xl font-extrabold text-limeGreen font-Ubuntu sm:text-4xl">
               Pitch Your Startup
             </h2>
             <p className="mt-4text-[16px] font-montserrat text-gray-300">
@@ -37,7 +37,7 @@ function StartUp() {
             <div className="mt-8">
               <Link
                 to="/register"
-                className="inline-flex items-center justify-center px-5 py-3 border border-green-500 rounded-tl-2xl rounded-br-2xl text-base font-medium rounded-md text-white hover:bg-green-500"
+                className="inline-flex items-center justify-center px-5 py-3 border border-limeGreen rounded-tl-2xl rounded-br-2xl text-base font-medium rounded-md text-white hover:text-limeGreen"
               >
                 Apply Now
               </Link>
@@ -45,7 +45,7 @@ function StartUp() {
           </div>
 
           <div className="mt-12">
-            <h3 className="text-3xl font-extrabold text-green-500 font-Ubuntu sm:text-4xl text-center">
+            <h3 className="text-3xl font-extrabold text-limeGreen font-Ubuntu sm:text-4xl text-center">
               Incubation Program
             </h3>
             <p className="my-4 text-[14px] font-montserrat text-gray-300">
@@ -113,7 +113,7 @@ function StartUp() {
 
       {/* text slider is here */}
 
-      <div className="overflow-hidden text-green-500 font-Ubuntu">
+      <div className="overflow-hidden text-limeGreen font-Ubuntu">
         <Slider {...settings}>
           {["Talents. Ideas. Startups", ""].map((word, index) => (
             <div key={index} className="whitespace-nowrap">

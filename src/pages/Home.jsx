@@ -8,7 +8,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const slides = [banner1, banner2, banner3];
+const slides = [banner1];
 
 function Home() {
   const settings = {
@@ -30,10 +30,10 @@ function Home() {
         </Carousel>
       </div>
       {/* <First /> */}
-      <Color />
+      {/* <Color /> */}
       <Second />
       <Third />
-      <div className="overflow-hidden text-green-500 font-Ubuntu">
+      <div className="overflow-hidden text-limeGreen font-Ubuntu">
         <Slider {...settings}>
           {["Talents. Ideas. Startups", ""].map((word, index) => (
             <div key={index} className="whitespace-nowrap">

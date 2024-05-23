@@ -31,7 +31,7 @@ function Footer2() {
         </div>
         <div className="flex flex-col max-w-[400px] text-white sm:mx-auto lg:mx-0">
           <div>
-            <h4 className="text-md md:text-xl text-center text-green-500 font-bold mb-4 font-Ubuntu">
+            <h4 className="text-md md:text-xl text-center text-limeGreen font-bold mb-4 font-Ubuntu">
               CONTACT US
             </h4>
 
@@ -57,7 +57,7 @@ function Footer2() {
         <div className="sm:mx-auto lg:mx-0">
           <div className="flex flex-col gap-4">
             <div>
-              <h4 className="text-md md:text-xl text-center text-green-500 font-bold mb-4 font-Ubuntu">
+              <h4 className="text-md md:text-xl text-center text-limeGreen font-bold mb-4 font-Ubuntu">
                 STAY CONNECTED
               </h4>
               <div className="flex justify-center gap-2 items-center my-5">

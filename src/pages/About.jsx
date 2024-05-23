@@ -23,13 +23,13 @@ function About() {
         {Menu.map((item) => (
           <div
             key={item.id}
-            className="border border-green-400 rounded-lg shadow-md w-34 p-2 cursor-pointer mix-blend-normal hover:scale-110 duration-500 text-center bg-gray-600 text-white"
+            className="border border-limeGreen rounded-lg shadow-md w-34 p-2 cursor-pointer mix-blend-normal hover:scale-110 duration-500 text-center bg-gray-600 text-white"
           >
             <button
               onClick={() => handleClick(item.id)}
               className={`${
                 isActive(item.id)
-                  ? "bg-green-300 px-2 py-1 rounded-md text-white"
+                  ? "bg-limeGreen px-2 py-1 rounded-md text-white"
                   : ""
               }`}
             >
@@ -69,7 +69,7 @@ const WhoWeAre = () => (
       className="w-[250px] md:w-[400px] h-[200px] shadow-xl rounded-xl"
     />
     <div>
-      <h2 className="text-3xl sm:text-4xl font-extrabold font-Ubuntu text-green-500 text-center">
+      <h2 className="text-3xl sm:text-4xl font-extrabold font-Ubuntu text-limeGreen text-center">
         Who We Are
       </h2>
       <p className="py-4 font-montserrat text-[14px] text-gray-300">
@@ -88,7 +88,7 @@ const WhoWeAre = () => (
 const Affiliation = () => (
   <div className="flex flex-col md:flex-row gap-5 md:items-start items-center justify-center mt-5">
     <div>
-    <h2 className="text-3xl sm:text-4xl font-extrabold font-Ubuntu text-green-500 text-center">
+    <h2 className="text-3xl sm:text-4xl font-extrabold font-Ubuntu text-limeGreen text-center">
         Affiliation
       </h2>
       <p className="py-4 font-montserrat text-gray-300 text-[14px]">
@@ -115,7 +115,7 @@ const Challenge = () => (
       className="w-[250px] md:w-[400px] h-[200px] shadow-xl rounded-xl"
     />
     <div>
-    <h2 className="text-3xl sm:text-4xl font-extrabold font-Ubuntu text-green-500 text-center">
+    <h2 className="text-3xl sm:text-4xl font-extrabold font-Ubuntu text-limeGreen text-center">
         The Challenge
       </h2>
       <p className="py-4 font-montserrat text-gray-300 text-[14px]">
@@ -143,7 +143,7 @@ const VisionMission = () => (
         />
       </div>
       <div className="flex-1 text-center md:text-left">
-      <h2 className="text-2xl sm:text-3xl font-Ubuntu text-green-500 text-center">
+      <h2 className="text-2xl sm:text-3xl font-Ubuntu text-limeGreen text-center">
           Our Vision
         </h2>
         <p>
@@ -161,7 +161,7 @@ const VisionMission = () => (
         />
       </div>
       <div className="flex-1 text-center md:text-left">
-      <h2 className="text-2xl sm:text-3xl font-Ubuntu text-green-500 text-center">
+      <h2 className="text-2xl sm:text-3xl font-Ubuntu text-limeGreen text-center">
           Our Mission
         </h2>
         <p>
