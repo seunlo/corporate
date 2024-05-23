@@ -8,7 +8,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const slides = [banner1];
+const slides = [banner1, banner1, banner1];
 
 function Home() {
   const settings = {
@@ -26,7 +26,7 @@ function Home() {
     <>
       <div className="">
         <Carousel autoSlide={true}>
-          {[...slides.map((s) => <img src={s} className="object-cover" />)]}
+          {[...slides.map((s) => <img src={s} className="object-cover h-screen" />)]}
         </Carousel>
       </div>
       {/* <First /> */}
