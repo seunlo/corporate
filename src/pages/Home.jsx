@@ -1,15 +1,15 @@
 import Carousel from "../components/Carousel";
 import First from "../components/First";
 import Second from "../components/Second";
-import Karousel from "../components/Karousel";
+//import Karousel from "../components/Karousel";
 import Color from "../components/Color";
 import Third from "../components/Third";
-import { bird, desert, banner1, banner2, banner3 } from "../assets/images";
+import { bird, desert, banner1, banner2 } from "../assets/images";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const slides = [banner1, banner1, banner1];
+const slides = [banner2];
 
 function Home() {
   const settings = {
@@ -30,10 +30,7 @@ function Home() {
         <Carousel autoSlide={true}>
           {[
             ...slides.map((s) => (
-              <img
-                src={s}
-                className="object-fit min-h-[300px] md:min-h-[600px]"
-              />
+              <img src={s} className="object-fit min-h-[300px] md:h-[600px] w-full" />
             )),
           ]}
         </Carousel>
