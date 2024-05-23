@@ -6,7 +6,8 @@ import bird from "./bird.jpg";
 import desert from "./desert.jpg";
 import banner1 from "./banner1.jpg";
 import banner2 from "./banner2.jpg";
+import banner3 from './banner3.jpg'
 import tree from './tree.jpg'
 import text from './text.jpg'
 
-export { logo, footer, header, footer2, bird, desert, banner1, banner2, tree, text };
+export { logo, footer, header, footer2, bird, desert, banner1, banner2, banner3, text };

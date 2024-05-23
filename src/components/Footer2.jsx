@@ -11,7 +11,7 @@ import { IoLogoTiktok } from "react-icons/io5";
 
 function Footer2() {
   return (
-    <div className="mx-auto px-4 sm:px-6 lg:px-8 font-montserrat bg-gray-600 p-2">
+    <div className="mx-auto px-4 sm:px-6 lg:px-8 font-montserrat bg-black p-2">
       <div className="flex flex-col sm:flex-row justify-between items-center sm:items-center gap-8 lg:gap-0">
         <div className="sm:max-w-[220px] lg:max-w-[350px]">
           <div className="max-w-[130px]">
@@ -19,7 +19,7 @@ function Footer2() {
               <img
                 src={footer}
                 alt="Company Logo"
-                className="max-w-[180px] mix-blend-lighten"
+                className="max-w-[180px]"
               />
             </Link>
           </div>
