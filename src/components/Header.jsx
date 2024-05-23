@@ -13,6 +13,10 @@ export default function Header() {
 
   const [showMenu, setShowMenu] = useState(false);
 
+  const handleLinkClick = () => {
+    setShowMenu(false);
+  };
+
   return (
     <div className="border-b sticky top-0 z-50 bg-white shadow-lg">
       <header className="flex justify-between items-center p-3 max-w-6xl mx-auto overflow-x-auto">
@@ -82,15 +86,20 @@ export default function Header() {
           <button
             className="block md:hidden text-xl"
             onClick={() => setShowMenu(!showMenu)}
+            aria-expanded={showMenu}
+            aria-controls="mobile-menu"
           >
             ☰
           </button>
         </div>
         {showMenu && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b z-50">
+          <div
+            id="mobile-menu"
+            className="md:hidden absolute top-full left-0 right-0 bg-white border-b z-50"
+          >
             <ul className="list-none flex flex-col space-y-2 p-4">
               <li>
-                <Link to="/">
+                <Link to="/" onClick={handleLinkClick}>
                   <span
                     className={`text-sm font-semibold ${
                       pathRoute("/") &&
@@ -102,7 +111,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="/about">
+                <Link to="/about" onClick={handleLinkClick}>
                   <span
                     className={`text-sm font-semibold ${
                       pathRoute("/about") &&
@@ -114,10 +123,10 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="/founders">
+                <Link to="/startup" onClick={handleLinkClick}>
                   <span
                     className={`text-sm font-semibold ${
-                      pathRoute("/founders") &&
+                      pathRoute("/startup") &&
                       "text-white bg-green-500 text-sm rounded-lg py-1 px-2"
                     }`}
                   >
@@ -127,7 +136,7 @@ export default function Header() {
               </li>
 
               <li>
-                <Link to="/contact">
+                <Link to="/contact" onClick={handleLinkClick}>
                   <span
                     className={`text-sm font-semibold ${
                       pathRoute("/contact") &&

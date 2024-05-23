@@ -1,13 +1,14 @@
 import Carousel from "../components/Carousel";
 import First from "../components/First";
 import Second from "../components/Second";
+import Color from "../components/Color";
 import Third from "../components/Third";
-import { bird, desert } from "../assets/images";
+import { bird, desert, banner1, banner2, banner3 } from "../assets/images";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const slides = [bird, desert];
+const slides = [banner1, banner2, banner3];
 
 function Home() {
   const settings = {
@@ -29,6 +30,7 @@ function Home() {
         </Carousel>
       </div>
       {/* <First /> */}
+      <Color />
       <Second />
       <Third />
       <div className="overflow-hidden text-green-500 font-Ubuntu">

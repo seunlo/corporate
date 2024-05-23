@@ -91,13 +91,15 @@ function Admin() {
   return (
     <>
       <div className="bg-cover h-[100px] sm:h-[200px] flex items-center justify-center bg-[url('https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg')]">
-        <h1 className="text-white font-extrabold text-6xl font-Oswald">
+        <h1 className="text-white font-extrabold text-3xl sm:text-6xl font-Oswald">
           Admin Page
         </h1>
       </div>
-      <section className="max-w-6xl mx-auto flex justify-center items-center flex-col text-gray-300">
-        <h1 className="text-3xl text-center mt-6 font-bold">Welcome {name}</h1>
-        <div className="flex justify-between whitespace-nowrap text-sm sm:text-lg my-6 gap-3">
+      <section className="max-w-6xl mx-auto flex justify-center items-center flex-col text-gray-300 px-4 sm:px-0">
+        <h1 className="text-2xl sm:text-3xl text-center mt-6 font-bold">
+          Welcome {name}
+        </h1>
+        <div className="flex flex-wrap justify-center sm:justify-between whitespace-nowrap text-sm sm:text-lg my-6 gap-3 w-full sm:w-auto">
           <div
             onClick={onLogout}
             className="text-gray-300 hover:text-blue-800 transition duration-200 ease-in-out cursor-pointer text-center bg-green-500 w-36 h-12 p-2 rounded-full"
@@ -122,31 +124,31 @@ function Admin() {
         </div>
         {error && <div className="text-red-500">{error}</div>}
         {showTable && (
-          <div className="my-5">
+          <div className="my-5 w-full overflow-x-auto">
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-green-300 font-bold text-black">
                 <tr>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-left text-xs uppercase tracking-wider"
+                    className="px-2 sm:px-6 py-3 text-left text-xs uppercase tracking-wider"
                   >
                     Full Name
                   </th>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-left text-xs uppercase tracking-wider"
+                    className="px-2 sm:px-6 py-3 text-left text-xs uppercase tracking-wider"
                   >
                     Email
                   </th>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-left text-xs uppercase tracking-wider"
+                    className="px-2 sm:px-6 py-3 text-left text-xs uppercase tracking-wider"
                   >
                     Phone No
                   </th>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-left text-xs uppercase tracking-wider"
+                    className="px-2 sm:px-6 py-3 text-left text-xs uppercase tracking-wider"
                   >
                     Gender
                   </th>
@@ -155,23 +157,23 @@ function Admin() {
               <tbody className="bg-white divide-y divide-gray-200 text-black">
                 {currentUsers.map((user) => (
                   <tr key={user.id}>
-                    <td className="px-6 py-4 whitespace-nowrap">
+                    <td className="px-2 sm:px-6 py-4 whitespace-nowrap">
                       {user.full_name}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
+                    <td className="px-2 sm:px-6 py-4 whitespace-nowrap">
                       {user.email}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
+                    <td className="px-2 sm:px-6 py-4 whitespace-nowrap">
                       {user.phone}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm">
+                    <td className="px-2 sm:px-6 py-4 whitespace-nowrap text-sm">
                       {user.gender}
                     </td>
                   </tr>
                 ))}
               </tbody>
             </table>
-            <div className="mt-4">
+            <div className="mt-4 flex justify-center">
               {Array.from({
                 length: Math.ceil(users.length / usersPerPage),
               }).map((_, index) => (

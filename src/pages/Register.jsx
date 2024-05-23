@@ -51,7 +51,7 @@ function Register() {
           Registration Page
         </h1>
       </div>
-      <div className="max-w-3xl mx-auto py-5">
+      <div className="max-w-3xl mx-auto py-5 p-2">
         <form className="flex flex-col" onSubmit={handleSubmit}>
           <input
             type="text"
