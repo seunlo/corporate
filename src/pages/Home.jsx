@@ -26,7 +26,11 @@ function Home() {
     <>
       <div className="">
         <Carousel autoSlide={true}>
-          {[...slides.map((s) => <img src={s} className="object-cover h-screen" />)]}
+          {[
+            ...slides.map((s) => (
+              <img src={s} className="object-contain h-screen" />
+            )),
+          ]}
         </Carousel>
       </div>
       {/* <First /> */}
