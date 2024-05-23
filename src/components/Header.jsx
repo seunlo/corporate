@@ -56,14 +56,14 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link to="/startup">
+              <Link to="/incubation">
                 <span
                   className={`p-1 text-md font-Ubuntu ${
-                    pathRoute("/startup") &&
+                    pathRoute("/incubation") &&
                     "text-white bg-forestGreen text-sm rounded-lg px-3"
                   }`}
                 >
-                  Startups
+                  Incubation
                 </span>
               </Link>
             </li>
@@ -123,14 +123,14 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="/startup" onClick={handleLinkClick}>
+                <Link to="/incubation" onClick={handleLinkClick}>
                   <span
                     className={`text-sm font-semibold ${
-                      pathRoute("/startup") &&
+                      pathRoute("/incubation") &&
                       "text-white bg-forestGreen text-sm rounded-lg py-1 px-2"
                     }`}
                   >
-                    Startups
+                    Incubation
                   </span>
                 </Link>
               </li>

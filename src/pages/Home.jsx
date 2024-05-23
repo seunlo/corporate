@@ -41,7 +41,7 @@ function Home() {
       {/* <Color /> */}
       <Second />
       <Third />
-      <div className="overflow-hidden text-limeGreen font-Ubuntu">
+      <div className="overflow-hidden text-forestGreen font-Ubuntu">
         <Slider {...settings}>
           {["Talents. Ideas. Startups", ""].map((word, index) => (
             <div key={index} className="whitespace-nowrap">

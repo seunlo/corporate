@@ -4,17 +4,17 @@ function Second() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 pt-10 items-center max-w-6xl mx-auto gap-5">
       <div className="p-4 font-Economica">
-        <h2 className="text-3xl sm:text-4xl font-extrabold font-Ubuntu text-limeGreen">
+        <h2 className="text-2xl sm:text-3xl font-extrabold font-Ubuntu text-forestGreen">
           How We Do It
         </h2>
         <div className="max-w-[590px]">
-          <p className="mt-2 mb-3 font-montserrat text-[14px] text-gray-300">
+          <p className="mt-2 mb-3 font-montserrat text-[14px] text-white">
             We are clear on our mission and the roadmap to achieve it. Thus, we
             are deliberate about talents and the ecosystem we are building. Our
             strategic expression is to <b>S.I.F</b>
           </p>
         </div>
-        <div className=" font-montserrat text-[14px] text-gray-300">
+        <div className=" font-montserrat text-[14px] text-white">
           <div className="mb-3">
             <span>
               <b>SPOT</b>

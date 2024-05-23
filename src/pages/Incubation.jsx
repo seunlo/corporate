@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { bird, desert, banner1, banner2, banner3, text } from "../assets/images";
 
-function StartUp() {
+function Incubation() {
   const settings = {
     dots: false,
     infinite: true,
@@ -15,20 +16,22 @@ function StartUp() {
     cssEase: "linear",
     arrows: false,
   };
+
   return (
     <>
-      <div className="bg-cover h-[100px] sm:h-[200px] flex items-center justify-center bg-[url('https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg')]">
-        <h1 className="text-white font-extrabold text-6xl font-Oswald">
-          Startups
-        </h1>
+      <div
+        className="bg-cover h-[100px] sm:h-[200px] flex items-center justify-center"
+        style={{ backgroundImage: `url(${banner2})` }}
+      >
+        <h1 className="text-white font-extrabold text-6xl font-Oswald">Startups</h1>
       </div>
       <div className="py-12 text-gray-300 font-montserrat text-[14px]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-extrabold text-limeGreen font-Ubuntu sm:text-4xl">
+            <h2 className="text-2xl font-extrabold text-limeGreen font-Ubuntu sm:text-3xl">
               Pitch Your Startup
             </h2>
-            <p className="mt-4text-[16px] font-montserrat text-gray-300">
+            <p className="mt-4 text-[16px] font-montserrat text-gray-300">
               Are you a talented young Nigerian? Do you have an innovative idea
               or startup business capable of solving the average Nigerian
               problems and transforming the country? Do you need business
@@ -45,7 +48,7 @@ function StartUp() {
           </div>
 
           <div className="mt-12">
-            <h3 className="text-3xl font-extrabold text-limeGreen font-Ubuntu sm:text-4xl text-center">
+            <h3 className="text-2xl font-extrabold text-limeGreen font-Ubuntu sm:text-3xl text-center">
               Incubation Program
             </h3>
             <p className="my-4 text-[14px] font-montserrat text-gray-300">
@@ -56,7 +59,6 @@ function StartUp() {
               deal is agreed and signed;
             </p>
 
-            {/* <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"> */}
             <div className="flex flex-col gap-3">
               <div className="flex flex-col md:flex-row gap-3 max-w-4xl mx-auto">
                 <div className="px-4 py-5 sm:p-6 bg-white overflow-hidden shadow rounded-lg">
@@ -111,8 +113,6 @@ function StartUp() {
         </div>
       </div>
 
-      {/* text slider is here */}
-
       <div className="overflow-hidden text-limeGreen font-Ubuntu">
         <Slider {...settings}>
           {["Talents. Ideas. Startups", ""].map((word, index) => (
@@ -128,4 +128,4 @@ function StartUp() {
   );
 }
 
-export default StartUp;
+export default Incubation;

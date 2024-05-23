@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import FooterPage from "./components/FooterPage";
 import Footer2 from "./components/Footer2";
 import Register from "./pages/Register";
-import StartUp from "./pages/StartUp";
+import Incubation from "./pages/Incubation";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 //import SignUp from "./pages/SignUp";
@@ -24,7 +24,7 @@ export default function App() {
         <Route path="/admin" element={<PrivateRoute />}>
           <Route path="/admin" element={<Admin />} />
         </Route>
-        <Route path="/startup" element={<StartUp />} />
+        <Route path="/incubation" element={<Incubation />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/register" element={<Register />} />

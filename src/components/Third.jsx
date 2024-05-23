@@ -4,10 +4,10 @@ function Third() {
   return (
     <>
       <div className="max-w-6xl mx-auto p-4 font-montserrat">
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-limeGreen mb-2 font-Ubuntu">
+      <h2 className="text-2xl sm:text-3xl font-extrabold font-Ubuntu text-forestGreen">
           Our Tribe
         </h2>
-        <p className="text-[14px] text-gray-300">
+        <p className="text-[14px] text-white">
           We are looking for brilliant and innovative minds that can solve
           problems and transform Nigeria. We work with a tribe of young people
           with the right kind of VOICE that can convince our partners, investors
