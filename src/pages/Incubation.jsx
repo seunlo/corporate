@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { bird, desert, banner1, banner2, banner3, text } from "../assets/images";
+import { startup, pitch, reg, enhance, place } from "../assets/images";
 
 function Incubation() {
   const settings = {
@@ -11,27 +11,55 @@ function Incubation() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 0, // Adjust the speed in milliseconds
+    autoplaySpeed: 0,
     speed: 8000,
     cssEase: "linear",
     arrows: false,
   };
 
+  const stages = [
+    {
+      title: "Pitching",
+      description:
+        "Welcome to the first stage to pitch your startup ideas for innovation testing and market evaluation. Here, we’d like you to thrill us about the problem(s) you aim to solve.",
+      img: pitch,
+    },
+    {
+      title: "Registration",
+      description:
+        "If successful at the pitch stage, you are officially enrolled and onboarded into our cohort and subject to enhancement in the Foundry.",
+      img: reg,
+    },
+    {
+      title: "Enhancement",
+      description:
+        "This stage entails working with the Foundry’s industry professionals and subject matter experts across tech, finance, and consulting to fine-tune the startup idea for market readiness, business structure, and strategy to win in the marketplace.",
+      img: enhance,
+    },
+    {
+      title: "Placement",
+      description:
+        "Congratulations! At this final stage, you are officially presented with a deal - the oxygen you require to launch, thrive, and scale. Thus, fulfilling our mission and corporate essence.",
+      img: place,
+    },
+  ];
+
   return (
     <>
-      <div
-        className="bg-cover h-[100px] sm:h-[200px] flex items-center justify-center"
-        style={{ backgroundImage: `url(${banner2})` }}
-      >
-        <h1 className="text-white font-extrabold text-6xl font-Oswald">Startups</h1>
+      <div className="relative h-[100px] sm:h-[200px] flex items-center justify-center">
+        <img
+          src={startup}
+          alt="Banner"
+          className="absolute inset-0 w-full h-full object-center"
+        />
       </div>
       <div className="py-12 text-gray-300 font-montserrat text-[14px]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-2xl font-extrabold text-limeGreen font-Ubuntu sm:text-3xl">
+            <h3 className="text-xl font-extrabold text-limeGreen font-Ubuntu md:text-2xl">
               Pitch Your Startup
-            </h2>
-            <p className="mt-4 text-[16px] font-montserrat text-gray-300">
+            </h3>
+            <p className="mt-4 text-[16px] font-montserrat text-white">
               Are you a talented young Nigerian? Do you have an innovative idea
               or startup business capable of solving the average Nigerian
               problems and transforming the country? Do you need business
@@ -40,7 +68,7 @@ function Incubation() {
             <div className="mt-8">
               <Link
                 to="/register"
-                className="inline-flex items-center justify-center px-5 py-3 border border-limeGreen rounded-tl-2xl rounded-br-2xl text-base font-medium rounded-md text-white hover:text-limeGreen"
+                className="inline-flex items-center justify-center px-5 py-3 border border-limeGreen rounded-tl-2xl rounded-br-2xl text-base font-medium text-white hover:text-limeGreen"
               >
                 Apply Now
               </Link>
@@ -48,66 +76,36 @@ function Incubation() {
           </div>
 
           <div className="mt-12">
-            <h3 className="text-2xl font-extrabold text-limeGreen font-Ubuntu sm:text-3xl text-center">
+            <h3 className="text-xl font-extrabold text-limeGreen font-Ubuntu md:text-2xl text-center">
               Incubation Program
             </h3>
-            <p className="my-4 text-[14px] font-montserrat text-gray-300">
-              Our incubation program is nothing but to ensure that your startup
+            <p className="my-4 text-[14px] font-montserrat text-white">
+              Our incubation program is designed to ensure that your startup
               idea is market-ready and future-proof. Once you meet the criteria
-              for our tribe and confirmed as a potential V.O.I.C.E in our
-              cohorts, we officially take you on the P.R.E.P stages before a
-              deal is agreed and signed;
+              for our tribe and are confirmed as a potential V.O.I.C.E in our
+              cohorts, we officially take you through the P.R.E.P stages before
+              a deal is agreed and signed.
             </p>
 
-            <div className="flex flex-col gap-3">
-              <div className="flex flex-col md:flex-row gap-3 max-w-4xl mx-auto">
-                <div className="px-4 py-5 sm:p-6 bg-white overflow-hidden shadow rounded-lg">
-                  <h4 className="text-xl font-bold font-Ubuntu text-gray-900 text-center">
-                    Pitching
+            <div className="flex flex-col md:flex-row md:flex-wrap gap-3 justify-center items-center md:items-stretch">
+              {stages.map((stage, index) => (
+                <div
+                  key={index}
+                  className="flex-1 min-w-[250px] max-w-sm px-4 py-5 sm:p-6 bg-white overflow-hidden shadow rounded-lg flex flex-col items-center" // Added flex and items-center classes here
+                >
+                  <img
+                    src={stage.img}
+                    alt={stage.title}
+                    className="w-8 h-6 object-contain mb-2"
+                  />
+                  <h4 className="text-lg font-bold font-Ubuntu text-gray-900 text-center">
+                    {stage.title}
                   </h4>
-                  <p className="mt-2 text-[14px] leading-5 text-gray-500 text-justify">
-                    Welcome to the first stage to pitch your startup ideas for
-                    innovation testing and market evaluation. Here, we’d like
-                    you to thrill us about the problem(s) you to aim to solve.
+                  <p className="mt-2 text-[14px] leading-5 text-black text-justify">
+                    {stage.description}
                   </p>
                 </div>
-
-                <div className="px-4 py-5 sm:p-6 bg-white overflow-hidden shadow rounded-lg">
-                  <h4 className="text-xl font-bold font-Ubuntu text-gray-900 text-center">
-                    Registration
-                  </h4>
-                  <p className="mt-2 text-[14px] leading-5 text-gray-500 text-justify">
-                    If successful at the pitch stage, you are officially
-                    enrolled and onboarded into our cohort and subject to
-                    enhancement in the Foundry.
-                  </p>
-                </div>
-
-                <div className="px-4 py-5 sm:p-6 bg-white overflow-hidden shadow rounded-lg">
-                  <h4 className="text-xl font-bold font-Ubuntu text-gray-900 text-center">
-                    Enhancement
-                  </h4>
-                  <p className="mt-2 text-[14px] leading-5 text-gray-500 text-justify">
-                    This stage entails working with the Foundry’s industry
-                    professionals and subject matter experts across tech,
-                    finance and consulting to fine-tune the startup idea for
-                    market readiness, business structure and strategy to win in
-                    the marketplace.
-                  </p>
-                </div>
-              </div>
-
-              <div className="px-4 py-5 sm:p-6 bg-white overflow-hidden shadow rounded-lg max-w-4xl mx-auto">
-                <h4 className="text-xl font-bold font-Ubuntu text-gray-900 text-center">
-                  Placement
-                </h4>
-                <p className="mt-2 text-[14px] leading-5 text-gray-500 text-justify">
-                  Congratulations! At this final stage, you are officially
-                  presented with a deal - the oxygen you require to launch,
-                  thrive and scale. Thus, fulfilling our mission and corporate
-                  essence.
-                </p>
-              </div>
+              ))}
             </div>
           </div>
         </div>

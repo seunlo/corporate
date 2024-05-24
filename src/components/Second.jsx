@@ -4,9 +4,9 @@ function Second() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 pt-10 items-center max-w-6xl mx-auto gap-5">
       <div className="p-4 font-Economica">
-        <h2 className="text-2xl sm:text-3xl font-extrabold font-Ubuntu text-forestGreen">
+        <h3 className="text-xl font-extrabold text-limeGreen font-Ubuntu md:text-2xl text-center">
           How We Do It
-        </h2>
+        </h3>
         <div className="max-w-[590px]">
           <p className="mt-2 mb-3 font-montserrat text-[14px] text-white">
             We are clear on our mission and the roadmap to achieve it. Thus, we
