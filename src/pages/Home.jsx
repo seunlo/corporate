@@ -4,7 +4,11 @@ import Second from "../components/Second";
 //import Karousel from "../components/Karousel";
 import Color from "../components/Color";
 import Third from "../components/Third";
-import { banner1, banner2, banner3 } from "../assets/images";
+import {
+  banner1,
+  banner2,
+  banner3,
+} from "../assets/images";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
