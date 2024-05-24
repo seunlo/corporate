@@ -1,16 +1,8 @@
 import { useState } from "react";
 import OurTeam from "../components/OurTeam";
 
-const Menu = [
-  { id: 1, title: "Who We Are" },
-  { id: 2, title: "Corporate Essence" },
-];
-
 function About() {
   const [content, setContent] = useState(1);
-
-  const handleClick = (index) => setContent(index);
-  const isActive = (index) => content === index;
 
   return (
     <>
@@ -19,42 +11,12 @@ function About() {
           About Us
         </h1>
       </div>
-      <div className="flex flex-wrap rounded-lg py-2 my-5 gap-5 p-1 ml-5 max-w-6xl mx-auto">
-        {Menu.map((item) => (
-          <div
-            key={item.id}
-            className="border border-limeGreen rounded-lg shadow-md w-34 p-2 cursor-pointer mix-blend-normal hover:scale-110 duration-500 text-center bg-gray-600 text-white"
-          >
-            <button
-              onClick={() => handleClick(item.id)}
-              className={`${
-                isActive(item.id)
-                  ? "bg-limeGreen px-2 py-1 rounded-md text-white"
-                  : ""
-              }`}
-            >
-              {item.title}
-            </button>
-          </div>
-        ))}
-      </div>
       <div className="max-w-6xl mx-auto my-5 mb-10">
-        {Menu.filter((item) => item.id === content).map((item) => (
-          <div key={item.id} className="p-2 panel active">
-            {item.id === 1 && (
-              <>
-                <WhoWeAre />
-                <Affiliation />
-              </>
-            )}
-            {item.id === 2 && (
-              <>
-                <Challenge />
-                <VisionMission />
-              </>
-            )}
-          </div>
-        ))}
+        <div key={1} className="p-2 panel active">
+          <WhoWeAre />
+          <Affiliation />
+          <VisionMission />
+        </div>
       </div>
       <OurTeam />
     </>
@@ -63,15 +25,10 @@ function About() {
 
 const WhoWeAre = () => (
   <div className="flex flex-col md:flex-row gap-5 md:items-start items-center justify-center mt-2">
-    <img
-      src="https://t3.ftcdn.net/jpg/01/28/44/76/360_F_128447604_6deYSrg6bgH2F3YaoU0icdhvxNu4ReDN.jpg"
-      alt="Image"
-      className="w-[250px] md:w-[400px] h-[200px] shadow-xl rounded-xl"
-    />
     <div>
-      <h2 className="text-3xl sm:text-4xl font-extrabold font-Ubuntu text-limeGreen text-center">
+      <h3 className="text-xl font-extrabold text-limeGreen font-Ubuntu md:text-2xl text-center">
         Who We Are
-      </h2>
+      </h3>
       <p className="py-4 font-montserrat text-[14px] text-gray-300">
         Elaloey Foundry is a social enterprise and venture fund for startup
         ideas and early-stage businesses in Nigeria. We are passionate about
@@ -88,45 +45,15 @@ const WhoWeAre = () => (
 const Affiliation = () => (
   <div className="flex flex-col md:flex-row gap-5 md:items-start items-center justify-center mt-5">
     <div>
-    <h2 className="text-3xl sm:text-4xl font-extrabold font-Ubuntu text-limeGreen text-center">
+      <h3 className="text-xl font-extrabold text-limeGreen font-Ubuntu md:text-2xl text-center">
         Affiliation
-      </h2>
+      </h3>
       <p className="py-4 font-montserrat text-gray-300 text-[14px]">
         Elaloey Foundry is a brainchild of the De Elaloey Brothers Company; an
         enterprise formation and investment company aimed at investing in people
         and transforming lives. De Elaloey Brothers operates with three
         strategic expressions - companies' formation, investments, and
         partnerships.
-      </p>
-    </div>
-    <img
-      src="https://www.psychologs.com/wp-content/uploads/2024/01/the-psychology-behind-need-for-affiliation.jpg"
-      alt="Image"
-      className="w-[250px] md:w-[400px] h-[200px] shadow-xl rounded-xl"
-    />
-  </div>
-);
-
-const Challenge = () => (
-  <div className="flex flex-col md:flex-row gap-5 md:items-start items-center justify-center mt-2">
-    <img
-      src="https://i0.wp.com/media.premiumtimesng.com/wp-content/files/2023/08/Problems.jpg?ssl=1"
-      alt="Image"
-      className="w-[250px] md:w-[400px] h-[200px] shadow-xl rounded-xl"
-    />
-    <div>
-    <h2 className="text-3xl sm:text-4xl font-extrabold font-Ubuntu text-limeGreen text-center">
-        The Challenge
-      </h2>
-      <p className="py-4 font-montserrat text-gray-300 text-[14px]">
-        Nigeria boasts of the largest active workforce in Africa and the world
-        by extension. With about 70% of its population being young people with
-        creative minds (156 million), Nigeria is blessed with economic asset – a
-        talented and active workforce with the capacity for GDP growth and
-        economic development. Sadly, a sizeable portion of these talents are not
-        harnessed and the business ideas and startups from this active
-        population die prematurely due to lack of economic support and
-        infrastructure to launch and thrive.
       </p>
     </div>
   </div>
@@ -143,9 +70,9 @@ const VisionMission = () => (
         />
       </div>
       <div className="flex-1 text-center md:text-left">
-      <h2 className="text-2xl sm:text-3xl font-Ubuntu text-limeGreen text-center">
+        <h3 className="text-xl font-extrabold text-limeGreen font-Ubuntu md:text-2xl">
           Our Vision
-        </h2>
+        </h3>
         <p>
           To see Nigeria become a destination of choice and prosperity for
           startups and young people.
@@ -161,9 +88,9 @@ const VisionMission = () => (
         />
       </div>
       <div className="flex-1 text-center md:text-left">
-      <h2 className="text-2xl sm:text-3xl font-Ubuntu text-limeGreen text-center">
+        <h3 className="text-xl font-extrabold text-limeGreen font-Ubuntu md:text-2xl">
           Our Mission
-        </h2>
+        </h3>
         <p>
           We exist to provide the required <b>oxygen</b> for startup ideas and
           early-stage businesses to launch, scale, and thrive in Nigeria.

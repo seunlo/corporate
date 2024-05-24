@@ -33,7 +33,7 @@ function Incubation() {
     {
       title: "Enhancement",
       description:
-        "This stage entails working with the Foundry’s industry professionals and subject matter experts across tech, finance, and consulting to fine-tune the startup idea for market readiness, business structure, and strategy to win in the marketplace.",
+        "Work with our industry professionals and subject matter experts to fine-tune and enhance your startup for business structure, market-readiness and strategy to win in the marketplace.",
       img: enhance,
     },
     {
@@ -96,9 +96,9 @@ function Incubation() {
                   <img
                     src={stage.img}
                     alt={stage.title}
-                    className="w-8 h-6 object-contain mb-2"
+                    className="w-10 h-10 object-contain mb-2"
                   />
-                  <h4 className="text-lg font-bold font-Ubuntu text-gray-900 text-center">
+                  <h4 className="text-[16px] font-bold font-Ubuntu text-gray-900 text-center">
                     {stage.title}
                   </h4>
                   <p className="mt-2 text-[14px] leading-5 text-black text-justify">

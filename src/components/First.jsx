@@ -10,13 +10,12 @@ function First() {
           </h3>
           <p className="py-4 font-montserrat text-sm md:text-[14px]">
             Nigeria boasts of the largest active workforce in Africa and the
-            world by extension. With about 70% of its population being young
-            people with creative minds (156 million), Nigeria is blessed with
-            economic asset – a talented and active workforce with the capacity
-            for GDP growth and economic development. Sadly, a sizeable portion
-            of these talents are not harnessed and the business ideas and
-            startups from this active population die prematurely due to lack of
-            economic support and infrastructure to launch and thrive.
+            world by extension. With about 156 million young people, Nigeria is
+            blessed with economic asset – a talented active workforce with
+            capacity for GDP growth and economic development. Sadly, a sizeable
+            portion of this demography are not harnessed, with business ideas
+            and startups die prematurely due to lack of economic support and
+            conducive environment.
           </p>
         </div>
       </div>

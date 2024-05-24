@@ -5,9 +5,9 @@ function OurTeam() {
   return (
     <>
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-extrabold font-Ubuntu text-limeGreen text-center">
+        <h3 className="text-xl font-extrabold text-limeGreen font-Ubuntu md:text-2xl text-center">
           Our Team
-        </h2>
+        </h3>
         <p className="p-6 font-montserrat text-gray-300 text-[14px]">
           We are blessed with the right 3H&#39;s (heads, hearts and hands) in
           the world to birth your dreams and ideas. Our team comprise of
