@@ -8,7 +8,7 @@ function OurTeam() {
         <h3 className="text-xl font-extrabold text-limeGreen font-Ubuntu md:text-2xl text-center">
           Our Team
         </h3>
-        <p className="p-6 font-montserrat text-gray-300 text-[14px]">
+        <p className="p-6 font-montserrat text-white text-[14px]">
           We are blessed with the right 3H&#39;s (heads, hearts and hands) in
           the world to birth your dreams and ideas. Our team comprise of
           industry experts, founders and investors who are committed to seeing

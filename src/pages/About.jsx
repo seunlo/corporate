@@ -29,7 +29,7 @@ const WhoWeAre = () => (
       <h3 className="text-xl font-extrabold text-limeGreen font-Ubuntu md:text-2xl text-center">
         Who We Are
       </h3>
-      <p className="py-4 font-montserrat text-[14px] text-gray-300">
+      <p className="py-4 font-montserrat text-[14px] text-white">
         Elaloey Foundry is a social enterprise and venture fund for startup
         ideas and early-stage businesses in Nigeria. We are passionate about
         spotting, incubating, and funding innovative ideas and startup
@@ -48,7 +48,7 @@ const Affiliation = () => (
       <h3 className="text-xl font-extrabold text-limeGreen font-Ubuntu md:text-2xl text-center">
         Affiliation
       </h3>
-      <p className="py-4 font-montserrat text-gray-300 text-[14px]">
+      <p className="py-4 font-montserrat text-white text-[14px]">
         Elaloey Foundry is a brainchild of the De Elaloey Brothers Company; an
         enterprise formation and investment company aimed at investing in people
         and transforming lives. De Elaloey Brothers operates with three
