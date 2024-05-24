@@ -1,60 +1,34 @@
-import { Link } from "react-router-dom";
+import React from "react";
 
 function First() {
   return (
-    <div className="bg-gradient-to-tl from-beige-500 to-white-200">
-      <img
-        src="https://i.pinimg.com/736x/2e/a0/89/2ea0890014d0e4b78c59abdff3529e7a.jpg"
-        alt="image"
-        className="w-full h-[500px] object-cover absolute mix-blend-overlay"
-      />
-      <div className="grid grid-cols-1 md:grid-cols-2 pt-10 items-center max-w-6xl mx-auto">
-        <div className="p-8 gap-8 mt-10">
-          <p className="font-extrabold text-5xl text-green-600 font-Ubuntu">
-            Launch and scale your startup ideas
+    <div className="container mx-auto flex flex-col md:flex-row gap-5 p-2 text-black">
+      <div className="flex flex-1 bg-gray-300 p-4 rounded-md md:rounded-md md:w-1/2 items-center justify-center">
+        <div className="flex flex-col text-center">
+          <h3 className="text-xl font-extrabold text-limeGreen font-Ubuntu md:text-2xl">
+            The Challenge
+          </h3>
+          <p className="py-4 font-montserrat text-sm md:text-[14px]">
+            Nigeria boasts of the largest active workforce in Africa and the
+            world by extension. With about 70% of its population being young
+            people with creative minds (156 million), Nigeria is blessed with
+            economic asset – a talented and active workforce with the capacity
+            for GDP growth and economic development. Sadly, a sizeable portion
+            of these talents are not harnessed and the business ideas and
+            startups from this active population die prematurely due to lack of
+            economic support and infrastructure to launch and thrive.
           </p>
-          <p className="font-regular text-[18px] my-5 text-gray-300">
-            We are building the next big thing by providing startups with the
-            <span className="text-red-700 font-bold"> oxygen</span> to launch,
-            thrive and scale.
-          </p>
-          <Link
-            to="/about"
-            className="bg-red-700 text-white p-2 font-medium rounded-tl-2xl rounded-br-2xl"
-          >
-            Apply Nowsssssss
-          </Link>
-        </div>
-        <div className="">
-          <img
-            src="https://nirmanodisha.org/wp-content/uploads/2020/12/our_mission.jpg"
-            alt="image"
-            className="w-full h-[200px] rounded-lg"
-          />
         </div>
       </div>
-      <div className="max-w-4xl h-[150px] rounded-xl mx-auto flex items-center gap-[80px] justify-evenly bg-red-500 shadow-xl p-2">
-        <div className="">
-          <h4 className="text-center text-[30px] font-extrabold">25+</h4>
-          <p className="text-center text-xs sm:text-[15px]">
-            admitted to global
+      <div className="flex flex-1 bg-gray-300 p-4 rounded-md md:rounded-md md:w-1/2 items-center justify-center">
+        <div className="flex flex-col text-center">
+          <h3 className="text-xl font-extrabold text-limeGreen font-Ubuntu md:text-2xl">
+            Our Solution
+          </h3>
+          <p className="py-4 font-montserrat text-sm md:text-[14px]">
+            We provide the required oxygen for startup ideas and early-stage
+            businesses to launch, thrive and scale.
           </p>
-          <p className="text-center text-xs sm:text-[15px]">accelerators</p>
-        </div>
-        <div className="">
-          <h4 className="text-center text-[30px] font-extrabold">$1B+</h4>
-          <p className="text-center text-xs sm:text-[15px]">
-            dollars raised in
-          </p>
-          <p className="text-center text-xs sm:text-[15px]">
-            follow on capital
-           
-          </p>
-        </div>
-        <div className="">
-          <h4 className="text-center text-[30px] font-extrabold">75+</h4>
-          <p className="text-center text-xs sm:text-[15px]">number of co-</p>
-          <p className="text-center text-xs sm:text-[15px]">investors</p>
         </div>
       </div>
     </div>

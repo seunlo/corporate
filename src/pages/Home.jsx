@@ -37,7 +37,7 @@ function Home() {
           ))}
         </Carousel>
       </div>
-      {/* <First /> */}
+      <First />
       {/* <Color /> */}
       <Second />
       <Third />
