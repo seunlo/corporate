@@ -1,14 +1,10 @@
 import Carousel from "../components/Carousel";
 import First from "../components/First";
 import Second from "../components/Second";
-//import Karousel from "../components/Karousel";
+import Karousel from "../components/Karousel";
 import Color from "../components/Color";
 import Third from "../components/Third";
-import {
-  banner1,
-  banner2,
-  banner3,
-} from "../assets/images";
+import { banner1, banner2, banner3 } from "../assets/images";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -29,14 +25,14 @@ function Home() {
   };
   return (
     <>
-      {/* <Karousel /> */}
-      <div className="">
+      <Karousel />
+      {/* <div className="">
         <Carousel autoSlide={true}>
           {slides.map((s, index) => (
             <img key={index} src={s} className="" />
           ))}
         </Carousel>
-      </div>
+      </div> */}
       <First />
       {/* <Color /> */}
       <Second />
@@ -45,7 +41,7 @@ function Home() {
         <Slider {...settings}>
           {["Talents. Ideas. Startups", ""].map((word, index) => (
             <div key={index} className="whitespace-nowrap">
-              <span className="inline-block px-4 text-4xl font-bold">
+              <span className="inline-block px-4 text-xl md:text-2xl font-extrabold">
                 {word}
               </span>
             </div>

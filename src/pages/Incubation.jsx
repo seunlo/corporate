@@ -115,7 +115,7 @@ function Incubation() {
         <Slider {...settings}>
           {["Talents. Ideas. Startups", ""].map((word, index) => (
             <div key={index} className="whitespace-nowrap">
-              <span className="inline-block px-4 text-4xl font-bold">
+              <span className="inline-block px-4 text-xl md:text-2xl font-extrabold">
                 {word}
               </span>
             </div>

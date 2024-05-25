@@ -5,10 +5,13 @@ function First() {
     <div className="container mx-auto flex flex-col md:flex-row gap-5 p-2 text-black">
       <div className="flex flex-1 bg-gray-300 p-4 rounded-md md:rounded-md md:w-1/2 items-center justify-center">
         <div className="flex flex-col text-center">
-          <h3 className="text-xl font-extrabold text-limeGreen font-Ubuntu md:text-2xl">
+          <h3
+            className="text-xl font-extrabold font-Ubuntu md:text-2xl"
+            style={{ color: "#355E3B" }}
+          >
             The Challenge
           </h3>
-          <p className="py-4 font-montserrat text-sm md:text-[14px]">
+          <p className="py-4 font-montserrat text-sm md:text-[14px] text-white">
             Nigeria boasts of the largest active workforce in Africa and the
             world by extension. With about 156 million young people, Nigeria is
             blessed with economic asset – a talented active workforce with
@@ -21,10 +24,13 @@ function First() {
       </div>
       <div className="flex flex-1 bg-gray-300 p-4 rounded-md md:rounded-md md:w-1/2 items-center justify-center">
         <div className="flex flex-col text-center">
-          <h3 className="text-xl font-extrabold text-limeGreen font-Ubuntu md:text-2xl">
+          <h3
+            className="text-xl font-extrabold font-Ubuntu md:text-2xl"
+            style={{ color: "#355E3B" }}
+          >
             Our Solution
           </h3>
-          <p className="py-4 font-montserrat text-sm md:text-[14px]">
+          <p className="py-4 font-montserrat text-sm md:text-[14px] text-white">
             We provide the required oxygen for startup ideas and early-stage
             businesses to launch, thrive and scale.
           </p>
