@@ -19,7 +19,7 @@ function Home() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 300, // Adjusted the speed to 3 seconds
-    speed: 2000,
+    speed: 5000,
     cssEase: "linear",
     arrows: false,
   };
@@ -40,13 +40,11 @@ function Home() {
       {/* <Color /> */}
       <Second />
       <Third />
-      <div className="overflow-hidden text-limeGreen font-montserrat">
+      <div className="overflow-hidden text-limeGreen font-montserrat p-2">
         <Slider {...settings}>
-          {["Talents. Ideas. Startups", ""].map((word, index) => (
+          {["Talents.   Ideas.   Startups", ""].map((word, index) => (
             <div key={index} className="whitespace-nowrap">
-              <span className="inline-block px-4 text-lg md:text-xl">
-                {word}
-              </span>
+              <span className="inline-block px-4 text-[14px]">{word}</span>
             </div>
           ))}
         </Slider>

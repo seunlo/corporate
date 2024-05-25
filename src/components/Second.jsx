@@ -4,7 +4,7 @@ function Second() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 items-center max-w-6xl mx-auto gap-5">
       <div className="p-4 font-montserrat">
-        <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl text-center">
+        <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl">
           How We Do It
         </h3>
         <div className="max-w-[590px]">
@@ -40,7 +40,7 @@ function Second() {
           </div>
           <div className="mb-3">
             <span>
-              <b>FUND</b>
+              <b>FINANCE</b>
             </span>{" "}
             -{" "}
             <span>

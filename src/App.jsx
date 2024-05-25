@@ -24,7 +24,7 @@ export default function App() {
         <Route path="/admin" element={<PrivateRoute />}>
           <Route path="/admin" element={<Admin />} />
         </Route>
-        <Route path="/incubation" element={<Incubation />} />
+        <Route path="/startups" element={<Incubation />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/register" element={<Register />} />

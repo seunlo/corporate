@@ -127,13 +127,17 @@ function Contact() {
             <div className="flex gap-5 p-8 items-center">
               <FaMapMarkerAlt className="w-10 h-10 md:w-14 md:h-14 border-2 border-limeGreen rounded-full p-3 text-white" />
               <div className="flex flex-col">
-                <p>Legacy boulevard SE Calgary. T2X 2B9 Canada</p>
+                <p>Legacy boulevard SE Calgary. T2X 2B9</p>
+                <p>Canada</p>
                 <p>+19-055-981-853</p>
               </div>
             </div>
             <div className="flex gap-5 p-8 items-center">
               <FaRegEnvelope className="w-10 h-10 md:w-14 md:h-14 border-2 border-limeGreen rounded-full p-3 text-white" />
-              <p>info@elaloeyfoundry.com</p>
+              <div className="flex flex-col">
+                <p>info@elaloeyfoundry.com</p>
+                <p>pitch@elaloeyfoundry.com</p>
+              </div>
             </div>
             {/* <div className="flex gap-5 p-8 items-center">
               <LuPhoneCall className="w-10 h-10 md:w-14 md:h-14 border-2 border-slate-300 rounded-full p-3 text-red-500" />

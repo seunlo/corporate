@@ -11,7 +11,7 @@ import { IoLogoTiktok } from "react-icons/io5";
 
 function Footer2() {
   return (
-    <div className="mx-auto px-4 sm:px-6 lg:px-8 font-montserrat py-4" style={{backgroundColor:'#355E3B'}}>
+    <div className="mx-auto px-4 sm:px-6 lg:px-8 font-montserrat pt-6 bg-gray-700">
       <div className="flex flex-col sm:flex-row justify-between items-center sm:items-center gap-8 lg:gap-0">
         <div className="sm:max-w-[220px] lg:max-w-[350px]">
           <div className="max-w-[130px]">
@@ -31,7 +31,7 @@ function Footer2() {
         </div>
         <div className="flex flex-col max-w-[400px] text-white sm:mx-auto lg:mx-0">
           <div>
-            <h4 className="text-sm md:text-md text-center text-limeGreen font-bold mb-4 font-Ubuntu">
+            <h4 className="text-sm md:text-md text-center text-limeGreen mb-4 font-Ubuntu">
               CONTACT US
             </h4>
 
@@ -56,8 +56,8 @@ function Footer2() {
         </div>
         <div className="sm:mx-auto lg:mx-0">
           <div className="flex flex-col gap-4">
-            <div>
-              <h4 className="text-sm md:text-md text-center text-limeGreen font-bold mb-4 font-Ubuntu">
+            <div className="">
+              <h4 className="text-sm md:text-md text-center text-limeGreen mb-4 font-Ubuntu">
                 STAY CONNECTED
               </h4>
               <div className="flex justify-center gap-2 items-center my-5">
@@ -94,8 +94,9 @@ function Footer2() {
           </div>
         </div>
       </div>
-      <Footer.Divider className="" />
-      <div className="text-white text-xs p-1 text-center">
+      {/* <Footer.Divider className="" /> */}
+      <div className="border-b-2"></div>
+      <div className="text-white text-xs text-center p-2">
         &copy; {new Date().getFullYear()} Elaloey Foundry - All Rights Reserved
       </div>
     </div>

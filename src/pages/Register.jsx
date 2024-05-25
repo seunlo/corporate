@@ -97,7 +97,7 @@ function Register() {
             type="submit"
             className="inline-flex items-center justify-center px-5 py-3 border border-green-500 rounded-tl-2xl rounded-br-2xl text-base font-medium rounded-md text-white hover:bg-green-500"
           >
-            Register
+            Apply
           </button>
         </form>
         {errorMessage && (

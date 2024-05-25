@@ -32,11 +32,14 @@ const WhoWeAre = () => (
       <p className="py-4 text-[14px] text-white">
         Elaloey Foundry is a social enterprise and venture fund for startup
         ideas and early-stage businesses in Nigeria. We are passionate about
-        spotting, incubating, and funding innovative ideas and startup
-        businesses with potential to transform Nigeria. The fund is earmarked to
-        provide young, credible, and innovative entrepreneurs with the requisite
-        business coaching, corporate services, and funding to launch and scale
-        their startups for the greater good of Nigeria.
+        spotting, incubating and funding innovative ideas and startup businesses
+        with potential to transform Nigeria. The fund is earmarked to provide
+        young, credible and innovative entrepreneurs with the requisite
+        coaching, corporate services and capital to launch and scale their
+        startups for the greater good of Nigeria. At the core of our existence
+        lies the desire to see dreams live, impact young people and transform
+        the nation. We do this by providing the oxygen and enabling environment
+        for talents, ideas and startups.
       </p>
     </div>
   </div>
@@ -51,9 +54,9 @@ const Affiliation = () => (
       <p className="py-4 text-white text-[14px]">
         Elaloey Foundry is a brainchild of the De Elaloey Brothers Company; an
         enterprise formation and investment company aimed at investing in people
-        and transforming lives. De Elaloey Brothers operates with three
-        strategic expressions - companies' formation, investments, and
-        partnerships.
+        and businesses thereby transforming lives. De Elaloey Brothers operates
+        with three strategic expressions - companies’ formation, venture
+        investments and strategic partnerships.
       </p>
     </div>
   </div>
@@ -70,7 +73,7 @@ const VisionMission = () => (
         />
       </div>
       <div className="flex-1 text-center md:text-left">
-        <h3 className="text-xl font-bold text-limeGreen md:text-2xl">
+        <h3 className="text-xl font-bold md:text-2xl">
           Our Vision
         </h3>
         <p>
@@ -88,7 +91,7 @@ const VisionMission = () => (
         />
       </div>
       <div className="flex-1 text-center md:text-left">
-        <h3 className="text-xl font-bold text-limeGreen font-Ubuntu md:text-2xl">
+        <h3 className="text-xl font-bold font-Ubuntu md:text-2xl">
           Our Mission
         </h3>
         <p>

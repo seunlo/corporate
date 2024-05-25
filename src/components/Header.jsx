@@ -25,7 +25,7 @@ export default function Header() {
             <img
               src={header}
               alt="company logo"
-              className="cursor-pointer h-[70px]"
+              className="cursor-pointer h-[65px]"
             />
           </Link>
         </div>
@@ -56,14 +56,14 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link to="/incubation">
+              <Link to="/startups">
                 <span
                   className={`p-1 text-md font-Ubuntu ${
-                    pathRoute("/incubation") &&
+                    pathRoute("/startups") &&
                     "text-white bg-forestGreen text-sm rounded-lg px-3"
                   }`}
                 >
-                  Incubation
+                  Startup Incubation
                 </span>
               </Link>
             </li>
@@ -123,14 +123,14 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="/incubation" onClick={handleLinkClick}>
+                <Link to="/startups" onClick={handleLinkClick}>
                   <span
                     className={`text-sm font-semibold ${
-                      pathRoute("/incubation") &&
+                      pathRoute("/startups") &&
                       "text-white bg-forestGreen text-sm rounded-lg py-1 px-2"
                     }`}
                   >
-                    Incubation
+                    Startups
                   </span>
                 </Link>
               </li>
@@ -150,6 +150,9 @@ export default function Header() {
             </ul>
           </div>
         )}
+        <Link to='/register' className="px-2 py-1 border text-sm bg-forestGreen cursor-pointer rounded-tl-2xl rounded-br-2xl text-white hover:bg-limeGreen">
+          Apply Now
+        </Link>
       </header>
     </div>
   );

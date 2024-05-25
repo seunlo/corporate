@@ -4,7 +4,7 @@ function Third() {
   return (
     <>
       <div className="max-w-6xl mx-auto p-4 font-montserrat">
-        <h3 className="text-xl font-extrabold text-limeGreen font-montserrat md:text-2xl text-center">
+        <h3 className="text-xl font-extrabold text-limeGreen font-montserrat md:text-2xl">
           Our Tribe
         </h3>
         <p className="text-[14px] text-white">
