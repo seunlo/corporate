@@ -12,7 +12,7 @@ import enhance from "./enhance.jpeg";
 import place from "./place.jpeg";
 import solution from "./solution.jpeg";
 import challenge from "./challenge.jpeg";
-import newfooter from "./newfooter.jpeg";
+import newfooter from "./newfooter.jpg";
 import newheader from "./latestheader.jpeg";
 
 export {

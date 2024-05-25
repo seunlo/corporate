@@ -31,14 +31,14 @@ function Footer2() {
         </div>
         <div className="flex flex-col max-w-[400px] text-white sm:mx-auto lg:mx-0">
           <div>
-            <h4 className="text-sm md:text-md text-center text-limeGreen mb-4 font-Ubuntu">
+            <h4 className="text-sm md:text-md text-center text-limeGreen mb-2 font-Ubuntu">
               CONTACT US
             </h4>
 
-            <div className="flex gap-5 items-center">
+            {/* <div className="flex gap-5 items-center">
               <LuPhoneCall className="w-4 h-4" />
               <p className="text-[12px]">+234-7060-679-276</p>
-            </div>
+            </div> */}
             <div className="flex gap-5 items-center">
               <PiWhatsappLogoThin className="w-4 h-4" />
               <p className="text-[12px]">+234-8077-089-309</p>
@@ -57,10 +57,10 @@ function Footer2() {
         <div className="sm:mx-auto lg:mx-0">
           <div className="flex flex-col gap-4">
             <div className="">
-              <h4 className="text-sm md:text-md text-center text-limeGreen mb-4 font-Ubuntu">
+              <h4 className="text-sm md:text-md text-center text-limeGreen mb-2 font-Ubuntu">
                 STAY CONNECTED
               </h4>
-              <div className="flex justify-center gap-2 items-center my-5">
+              <div className="flex justify-center gap-2 items-center my-3">
                 <a
                   href="https://facebook.com"
                   target="_blank"
@@ -95,7 +95,7 @@ function Footer2() {
         </div>
       </div>
       {/* <Footer.Divider className="" /> */}
-      <div className="border border-b-1 my-2"></div>
+      <div className="border-b border-1 my-2 border-slate-50"></div>
       <div className="text-white text-xs text-center p-1">
         &copy; {new Date().getFullYear()} Elaloey Foundry - All Rights Reserved
       </div>
