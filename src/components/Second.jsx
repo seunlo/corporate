@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 function Second() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 pt-10 items-center max-w-6xl mx-auto gap-5">
-      <div className="p-4 font-Economica">
-        <h3 className="text-xl font-extrabold text-limeGreen font-Ubuntu md:text-2xl text-center">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-center max-w-6xl mx-auto gap-5">
+      <div className="p-4 font-montserrat">
+        <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl text-center">
           How We Do It
         </h3>
         <div className="max-w-[590px]">

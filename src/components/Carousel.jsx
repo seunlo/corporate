@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "react-feather";
 
 const Carousel = ({
   children: slides,
   autoSlide = false,
-  autoSlideInterval = 3000,
+  autoSlideInterval = 5000,
 }) => {
   const [curr, setCurr] = useState(0);
 
@@ -31,15 +30,11 @@ const Carousel = ({
         <button
           onClick={prev}
           className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
-        >
-          <ChevronLeft />
-        </button>
+        ></button>
         <button
           onClick={next}
           className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
-        >
-          <ChevronRight />
-        </button>
+        ></button>
       </div>
       <div className="absolute bottom-4 right-0 left-0 flex items-center justify-center gap-2">
         {slides.map((_, i) => (

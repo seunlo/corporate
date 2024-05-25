@@ -68,7 +68,7 @@ function Incubation() {
             <div className="mt-8">
               <Link
                 to="/register"
-                className="inline-flex items-center justify-center px-5 py-3 border border-limeGreen rounded-tl-2xl rounded-br-2xl text-base font-medium text-white hover:text-limeGreen"
+                className="inline-flex items-center justify-center px-5 py-3 border border-limeGreen rounded-tl-2xl rounded-br-2xl text-base font-medium text-white hover:bg-limeGreen"
               >
                 Apply Now
               </Link>
@@ -98,7 +98,7 @@ function Incubation() {
                     alt={stage.title}
                     className="w-10 h-10 object-contain mb-2"
                   />
-                  <h4 className="text-[16px] font-bold font-Ubuntu text-gray-900 text-center">
+                  <h4 className="text-[16px] font-bold text-gray-900 text-center">
                     {stage.title}
                   </h4>
                   <p className="mt-2 text-[14px] leading-5 text-black text-justify">

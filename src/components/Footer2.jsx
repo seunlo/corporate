@@ -11,7 +11,7 @@ import { IoLogoTiktok } from "react-icons/io5";
 
 function Footer2() {
   return (
-    <div className="mx-auto px-4 sm:px-6 lg:px-8 font-montserrat" style={{backgroundColor:'#355E3B'}}>
+    <div className="mx-auto px-4 sm:px-6 lg:px-8 font-montserrat py-4" style={{backgroundColor:'#355E3B'}}>
       <div className="flex flex-col sm:flex-row justify-between items-center sm:items-center gap-8 lg:gap-0">
         <div className="sm:max-w-[220px] lg:max-w-[350px]">
           <div className="max-w-[130px]">
@@ -96,7 +96,7 @@ function Footer2() {
       </div>
       <Footer.Divider className="" />
       <div className="text-white text-xs p-1 text-center">
-        &copy; {new Date().getFullYear()} Elaloey Foundry. All rights reserved
+        &copy; {new Date().getFullYear()} Elaloey Foundry - All Rights Reserved
       </div>
     </div>
   );

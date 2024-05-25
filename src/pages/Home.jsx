@@ -18,14 +18,16 @@ function Home() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 0, // Adjust the speed in milliseconds
-    speed: 8000,
+    autoplaySpeed: 300, // Adjusted the speed to 3 seconds
+    speed: 2000,
     cssEase: "linear",
     arrows: false,
   };
+
   return (
     <>
       <Karousel />
+      {/* Uncomment this section if you want to use the custom Carousel component */}
       {/* <div className="">
         <Carousel autoSlide={true}>
           {slides.map((s, index) => (
@@ -34,14 +36,15 @@ function Home() {
         </Carousel>
       </div> */}
       <First />
+      {/* Uncomment if Color component is needed */}
       {/* <Color /> */}
       <Second />
       <Third />
-      <div className="overflow-hidden text-limeGreen font-Ubuntu">
+      <div className="overflow-hidden text-limeGreen font-montserrat">
         <Slider {...settings}>
           {["Talents. Ideas. Startups", ""].map((word, index) => (
             <div key={index} className="whitespace-nowrap">
-              <span className="inline-block px-4 text-xl md:text-2xl font-extrabold">
+              <span className="inline-block px-4 text-lg md:text-xl">
                 {word}
               </span>
             </div>

@@ -10,6 +10,8 @@ import pitch from "./pitch.jpeg";
 import reg from "./reg.jpeg";
 import enhance from "./enhance.jpeg";
 import place from "./place.jpeg";
+import solution from "./solution.jpeg";
+import challenge from "./challenge.jpeg";
 
 export {
   logo,
@@ -24,4 +26,6 @@ export {
   reg,
   enhance,
   place,
+  solution,
+  challenge,
 };
