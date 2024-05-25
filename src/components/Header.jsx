@@ -1,29 +1,32 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { header } from "../assets/images";
+import { header, newheader } from "../assets/images";
 
 export default function Header() {
-  const path = useLocation();
-  const pathRoute = (route) => {
-    if (route === path.pathname) {
-      return true;
-    }
-  };
+  const location = useLocation();
+  const isCurrentPath = (route) => route === location.pathname;
 
-  const [showMenu, setShowMenu] = useState(false);
+  const [isMenuVisible, setMenuVisible] = useState(false);
 
   const handleLinkClick = () => {
-    setShowMenu(false);
+    setMenuVisible(false);
   };
+
+  const navLinks = [
+    { path: "/", label: "Home" },
+    { path: "/about", label: "About us" },
+    { path: "/startups", label: "Startup Incubation" },
+    { path: "/contact", label: "Contact us" },
+  ];
 
   return (
     <div className="border-b sticky top-0 z-50 bg-white shadow-lg">
       <header className="flex justify-between items-center p-3 max-w-6xl mx-auto overflow-x-auto">
-        <div className="">
+        <div>
           <Link to="/">
             <img
-              src={header}
+              src={newheader}
               alt="company logo"
               className="cursor-pointer h-[65px]"
             />
@@ -31,128 +34,71 @@ export default function Header() {
         </div>
         <nav className="hidden md:flex space-x-10 font-semibold">
           <ul className="list-none flex space-x-10">
-            <li>
-              <Link to="/">
-                <span
-                  className={`p-1 text-md font-Ubuntu ${
-                    pathRoute("/") &&
-                    "text-white bg-forestGreen text-sm rounded-lg px-3"
-                  }`}
-                >
-                  Home
-                </span>
-              </Link>
-            </li>
-            <li>
-              <Link to="/about">
-                <span
-                  className={`p-1 text-md font-Ubuntu ${
-                    pathRoute("/about") &&
-                    "text-white bg-forestGreen text-sm rounded-lg px-3"
-                  }`}
-                >
-                  About us
-                </span>
-              </Link>
-            </li>
-            <li>
-              <Link to="/startups">
-                <span
-                  className={`p-1 text-md font-Ubuntu ${
-                    pathRoute("/startups") &&
-                    "text-white bg-forestGreen text-sm rounded-lg px-3"
-                  }`}
-                >
-                  Startup Incubation
-                </span>
-              </Link>
-            </li>
-
-            <li>
-              <Link to="/contact">
-                <span
-                  className={`p-1 text-md font-Ubuntu ${
-                    pathRoute("/contact") &&
-                    "text-white bg-forestGreen text-sm rounded-lg px-3"
-                  }`}
-                >
-                  Contact us
-                </span>
-              </Link>
-            </li>
+            {navLinks.map((link) => (
+              <li key={link.path}>
+                <Link to={link.path}>
+                  <span
+                    className={`p-1 text-md font-Ubuntu ${
+                      isCurrentPath(link.path) &&
+                      "text-white bg-forestGreen text-sm rounded-lg px-3"
+                    }`}
+                  >
+                    {link.label}
+                  </span>
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
-        <div className="flex items-center gap-4 relative">
+        <div className="hidden md:block">
+          <Link
+            to="/register"
+            className="px-2 py-1 border text-sm bg-forestGreen cursor-pointer rounded-tl-2xl rounded-br-2xl text-white hover:bg-limeGreen"
+          >
+            Apply Now
+          </Link>
+        </div>
+        <div className="flex items-center gap-4 relative md:hidden">
           <button
-            className="block md:hidden text-xl"
-            onClick={() => setShowMenu(!showMenu)}
-            aria-expanded={showMenu}
+            className="text-xl"
+            onClick={() => setMenuVisible(!isMenuVisible)}
+            aria-expanded={isMenuVisible}
             aria-controls="mobile-menu"
+            aria-label="Toggle navigation menu"
           >
             ☰
           </button>
         </div>
-        {showMenu && (
+        {isMenuVisible && (
           <div
             id="mobile-menu"
             className="md:hidden absolute top-full left-0 right-0 bg-white border-b z-50"
           >
             <ul className="list-none flex flex-col space-y-2 p-4">
+              {navLinks.map((link) => (
+                <li key={link.path}>
+                  <Link to={link.path} onClick={handleLinkClick}>
+                    <span
+                      className={`text-sm font-semibold ${
+                        isCurrentPath(link.path) &&
+                        "text-white bg-forestGreen text-sm rounded-lg py-1 px-2"
+                      }`}
+                    >
+                      {link.label}
+                    </span>
+                  </Link>
+                </li>
+              ))}
               <li>
-                <Link to="/" onClick={handleLinkClick}>
-                  <span
-                    className={`text-sm font-semibold ${
-                      pathRoute("/") &&
-                      "text-white bg-forestGreen text-sm rounded-lg py-1 px-2"
-                    }`}
-                  >
-                    Home
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" onClick={handleLinkClick}>
-                  <span
-                    className={`text-sm font-semibold ${
-                      pathRoute("/about") &&
-                      "text-white bg-forestGreen text-sm rounded-lg py-1 px-2"
-                    }`}
-                  >
-                    About us
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link to="/startups" onClick={handleLinkClick}>
-                  <span
-                    className={`text-sm font-semibold ${
-                      pathRoute("/startups") &&
-                      "text-white bg-forestGreen text-sm rounded-lg py-1 px-2"
-                    }`}
-                  >
-                    Startups
-                  </span>
-                </Link>
-              </li>
-
-              <li>
-                <Link to="/contact" onClick={handleLinkClick}>
-                  <span
-                    className={`text-sm font-semibold ${
-                      pathRoute("/contact") &&
-                      "text-white bg-forestGreen text-sm rounded-lg py-1 px-2"
-                    }`}
-                  >
-                    Contact us
+                <Link to="/register" onClick={handleLinkClick}>
+                  <span className="text-sm font-semibold text-white bg-forestGreen rounded-lg py-1 px-2">
+                    Apply Now
                   </span>
                 </Link>
               </li>
             </ul>
           </div>
         )}
-        <Link to='/register' className="px-2 py-1 border text-sm bg-forestGreen cursor-pointer rounded-tl-2xl rounded-br-2xl text-white hover:bg-limeGreen">
-          Apply Now
-        </Link>
       </header>
     </div>
   );

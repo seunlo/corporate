@@ -12,6 +12,8 @@ import enhance from "./enhance.jpeg";
 import place from "./place.jpeg";
 import solution from "./solution.jpeg";
 import challenge from "./challenge.jpeg";
+import newfooter from "./newfooter.jpeg";
+import newheader from "./latestheader.jpeg";
 
 export {
   logo,
@@ -28,4 +30,6 @@ export {
   place,
   solution,
   challenge,
+  newfooter,
+  newheader,
 };

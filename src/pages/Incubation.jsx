@@ -50,9 +50,10 @@ function Incubation() {
         <img
           src={startup}
           alt="Banner"
-          className="absolute inset-0 w-full h-full object-center"
+          className="absolute inset-0 w-full h-full object-cover"
         />
       </div>
+
       <div className="py-12 text-gray-300 font-montserrat text-[14px]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -91,7 +92,7 @@ function Incubation() {
               {stages.map((stage, index) => (
                 <div
                   key={index}
-                  className="flex-1 min-w-[250px] max-w-sm px-4 py-5 sm:p-6 bg-white overflow-hidden shadow rounded-lg flex flex-col items-center" // Added flex and items-center classes here
+                  className="flex-1 min-w-[250px] max-w-sm px-4 py-5 sm:p-6 bg-white overflow-hidden shadow rounded-lg flex flex-col items-center"
                 >
                   <img
                     src={stage.img}
@@ -113,9 +114,9 @@ function Incubation() {
 
       <div className="overflow-hidden text-limeGreen font-Ubuntu">
         <Slider {...settings}>
-          {["Talents. Ideas. Startups", ""].map((word, index) => (
+          {["Talents. Ideas. Startups",''].map((word, index) => (
             <div key={index} className="whitespace-nowrap">
-              <span className="inline-block px-4 text-[14px]">
+              <span className="inline-block px-8 text-[14px]"> {/* Changed px-4 to px-8 */}
                 {word}
               </span>
             </div>

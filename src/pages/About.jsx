@@ -72,11 +72,11 @@ const VisionMission = () => (
           className="absolute top-5 left-5 object-contain"
         />
       </div>
-      <div className="flex-1 text-center md:text-left">
+      <div className="flex-1 text-center md:text-left font-montserrat">
         <h3 className="text-xl font-bold md:text-2xl">
           Our Vision
         </h3>
-        <p>
+        <p className="text-[14px]">
           To see Nigeria become a destination of choice and prosperity for
           startups and young people.
         </p>
@@ -90,11 +90,11 @@ const VisionMission = () => (
           className="absolute top-5 left-5 object-contain"
         />
       </div>
-      <div className="flex-1 text-center md:text-left">
+      <div className="flex-1 text-center md:text-left font-montserrat">
         <h3 className="text-xl font-bold font-Ubuntu md:text-2xl">
           Our Mission
         </h3>
-        <p>
+        <p className="text-[14px]">
           We exist to provide the required <b>oxygen</b> for startup ideas and
           early-stage businesses to launch, scale, and thrive in Nigeria.
         </p>

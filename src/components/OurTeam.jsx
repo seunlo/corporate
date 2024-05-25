@@ -4,11 +4,11 @@ import { RiFundsLine } from "react-icons/ri";
 function OurTeam() {
   return (
     <>
-      <div className="max-w-6xl mx-auto font-montserrat">
-        <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl text-center">
+      <div className="max-w-6xl mx-auto font-montserrat mb-10">
+        <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl text-center mb-3">
           Our Team
         </h3>
-        <p className="p-6 text-white text-[14px]">
+        <p className=" text-white text-[14px]">
           We are blessed with some of the finest 3H's (heads, hearts and hands)
           in the world to birth your dreams and ideas. Our team comprise of
           industry experts, founders and investors who are committed to seeing

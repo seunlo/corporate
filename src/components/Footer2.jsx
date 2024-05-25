@@ -2,7 +2,7 @@ import { Footer } from "flowbite-react";
 import { IoLogoInstagram } from "react-icons/io5";
 import { TiSocialFacebook } from "react-icons/ti";
 import { Link } from "react-router-dom";
-import { footer } from "../assets/images";
+import { footer, newfooter} from "../assets/images";
 import { LuPhoneCall } from "react-icons/lu";
 import { PiWhatsappLogoThin } from "react-icons/pi";
 import { IoMailOutline } from "react-icons/io5";
@@ -11,13 +11,13 @@ import { IoLogoTiktok } from "react-icons/io5";
 
 function Footer2() {
   return (
-    <div className="mx-auto px-4 sm:px-6 lg:px-8 font-montserrat pt-6 bg-gray-700">
+    <div className="mx-auto px-4 sm:px-6 lg:px-8 font-montserrat pt-6 bg-gray-900">
       <div className="flex flex-col sm:flex-row justify-between items-center sm:items-center gap-8 lg:gap-0">
         <div className="sm:max-w-[220px] lg:max-w-[350px]">
           <div className="max-w-[130px]">
             <Link to="/">
               <img
-                src={footer}
+                src={newfooter}
                 alt="Company Logo"
                 className="max-w-[110px] mix-blend-screen"
               />
@@ -95,8 +95,8 @@ function Footer2() {
         </div>
       </div>
       {/* <Footer.Divider className="" /> */}
-      <div className="border-b-2"></div>
-      <div className="text-white text-xs text-center p-2">
+      <div className="border border-b-1 my-2"></div>
+      <div className="text-white text-xs text-center p-1">
         &copy; {new Date().getFullYear()} Elaloey Foundry - All Rights Reserved
       </div>
     </div>
