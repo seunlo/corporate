@@ -46,7 +46,7 @@ function Incubation() {
 
   return (
     <>
-      <div className="relative h-[100px] sm:h-[200px] flex items-center justify-center">
+      <div className="relative h-[100px] sm:h-[250px] overflow-hidden">
         <img
           src={startup}
           alt="Banner"

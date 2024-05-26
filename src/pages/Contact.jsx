@@ -5,6 +5,7 @@ import { FaRegEnvelope } from "react-icons/fa";
 import { LuPhoneCall } from "react-icons/lu";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { contact } from "../assets/images";
 
 function Contact() {
   const [formData, setFormData] = useState({});
@@ -45,14 +46,16 @@ function Contact() {
   };
   return (
     <>
-      <div className="bg-cover h-[100px] sm:h-[200px] flex items-center justify-center bg-[url('https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg')]">
-        <h1 className="text-white font-extrabold text-6xl font-Oswald">
-          Contact Us
-        </h1>
+      <div className="relative h-[100px] sm:h-[250px] overflow-hidden">
+        <img
+          src={contact}
+          alt="Banner"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
       </div>
       <div className="max-w-6xl mx-auto shadow-2xl my-5 flex flex-col md:flex-row text-gray-300">
         <div className="flex-1 p-8">
-          <h1 className="text-3xl font-bold my-5 font-Ubuntu text-limeGreen">
+          <h1 className="text-3xl font-bold my-5 font-montserrat text-limeGreen">
             Get in touch
           </h1>
           <div className="">
@@ -105,13 +108,13 @@ function Contact() {
         </div>
         <div className="border border-r-0"></div>
         <div className="flex-1 p-8">
-          <h1 className="text-3xl font-bold my-5 font-Ubuntu text-limeGreen">
+          <h1 className="text-3xl font-bold my-5 font-montserrat text-limeGreen">
             Our Presence
           </h1>
           <div className="font-montserrat">
             <div className="flex gap-5 p-8 items-center">
               <FaMapMarkerAlt className="w-10 h-10 md:w-14 md:h-14 border-2 border-limeGreen rounded-full p-3 text-white" />
-              <div className="flex flex-col">
+              <div className="flex flex-col font-montserrat text-[14px]">
                 <p>Olu Osifeso Street Yaba, Lagos Nigeria</p>
                 <p>+234-8077-089-309</p>
                 <p>+234-7060-679-276</p>
@@ -119,14 +122,14 @@ function Contact() {
             </div>
             <div className="flex gap-5 p-8 items-center">
               <FaMapMarkerAlt className="w-10 h-10 md:w-14 md:h-14 border-2 border-limeGreen rounded-full p-3 text-white" />
-              <div className="flex flex-col">
+              <div className="flex flex-col font-montserrat text-[14px]">
                 <p>Torkildsen Way, CM20 1AW, Harlow, Essex United Kingdom</p>
                 <p>+447-436-655-940</p>
               </div>
             </div>
             <div className="flex gap-5 p-8 items-center">
               <FaMapMarkerAlt className="w-10 h-10 md:w-14 md:h-14 border-2 border-limeGreen rounded-full p-3 text-white" />
-              <div className="flex flex-col">
+              <div className="flex flex-col font-montserrat text-[14px]">
                 <p>Legacy boulevard SE Calgary. T2X 2B9</p>
                 <p>Canada</p>
                 <p>+19-055-981-853</p>
@@ -134,7 +137,7 @@ function Contact() {
             </div>
             <div className="flex gap-5 p-8 items-center">
               <FaRegEnvelope className="w-10 h-10 md:w-14 md:h-14 border-2 border-limeGreen rounded-full p-3 text-white" />
-              <div className="flex flex-col">
+              <div className="flex flex-col font-montserrat text-[14px]">
                 <p>info@elaloeyfoundry.com</p>
                 <p>pitch@elaloeyfoundry.com</p>
               </div>

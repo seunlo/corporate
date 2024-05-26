@@ -1,15 +1,18 @@
 import { useState } from "react";
 import OurTeam from "../components/OurTeam";
+import { about } from "../assets/images";
 
 function About() {
   const [content, setContent] = useState(1);
 
   return (
     <>
-      <div className="bg-cover h-[100px] sm:h-[200px] flex items-center justify-center bg-[url('https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg')]">
-        <h1 className="text-white font-extrabold text-6xl font-Oswald">
-          About Us
-        </h1>
+      <div className="relative h-[100px] sm:h-[250px] overflow-hidden">
+        <img
+          src={about}
+          alt="Banner"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
       </div>
       <div className="max-w-6xl mx-auto my-5 mb-10 font-montserrat">
         <div key={1} className="p-2 panel active">
@@ -73,7 +76,7 @@ const VisionMission = () => (
         />
       </div>
       <div className="flex-1 text-center md:text-left font-montserrat">
-        <h3 className="text-xl font-bold md:text-2xl">
+      <h3 className="text-lg font-bold md:text-xl">
           Our Vision
         </h3>
         <p className="text-[14px]">
@@ -91,7 +94,7 @@ const VisionMission = () => (
         />
       </div>
       <div className="flex-1 text-center md:text-left font-montserrat">
-        <h3 className="text-xl font-bold font-Ubuntu md:text-2xl">
+        <h3 className="text-lg font-bold md:text-xl">
           Our Mission
         </h3>
         <p className="text-[14px]">
