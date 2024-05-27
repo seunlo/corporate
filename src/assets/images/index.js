@@ -3,7 +3,6 @@ import footer2 from "./footer2.png";
 import banner1 from "./banner1.jpg";
 import banner2 from "./banner2.jpg";
 import banner3 from "./banner3.jpg";
-import startup from "./startups.jpeg";
 import pitch from "./pitch.jpeg";
 import reg from "./reg.jpeg";
 import enhance from "./enhance.jpeg";
@@ -12,8 +11,9 @@ import solution from "./solution.jpeg";
 import challenge from "./challenge.jpeg";
 import newfooter from "./newfooter.jpg";
 import newheader from "./latestheader.jpeg";
-import about from './about.jpg'
-import contact from './contact.jpg'
+import about from "./about.jpg";
+import contact from "./contact.jpg";
+import startup from './startup.jpg'
 
 export {
   logo,
