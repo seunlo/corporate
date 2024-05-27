@@ -11,9 +11,9 @@ import solution from "./solution.jpeg";
 import challenge from "./challenge.jpeg";
 import newfooter from "./newfooter.jpg";
 import newheader from "./latestheader.jpeg";
-import about from "./about.jpg";
-import contact from "./contact.jpg";
-import startup from './startup.jpg'
+import about from "./about.jpeg";
+import contact from "./contact.jpeg";
+import startup from './startup.jpeg'
 
 export {
   logo,

@@ -91,7 +91,7 @@ function Admin() {
   return (
     <>
       <div className="bg-cover h-[100px] sm:h-[200px] flex items-center justify-center bg-[url('https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg')]">
-        <h1 className="text-white font-extrabold text-3xl sm:text-6xl font-Oswald">
+        <h1 className="text-white font-bold text-3xl sm:text-4xl font-montserrat">
           Admin Page
         </h1>
       </div>

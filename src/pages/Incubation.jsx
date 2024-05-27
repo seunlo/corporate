@@ -46,7 +46,7 @@ function Incubation() {
 
   return (
     <>
-      <div className="relative h-[100px] sm:h-[250px] overflow-hidden">
+      <div className="relative h-[150px] md:h-[200px] lg:h-[300px] overflow-hidden">
         <img
           src={startup}
           alt="Banner"
@@ -56,17 +56,17 @@ function Incubation() {
 
       <div className="py-12 text-gray-300 font-montserrat text-[14px]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h3 className="text-xl font-extrabold text-limeGreen font-Ubuntu md:text-2xl">
+          <div className="">
+          <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl sm:text-center">
               Pitch Your Startup
             </h3>
-            <p className="mt-4 text-[16px] font-montserrat text-white">
+            <p className="mt-4 text-[16px] font-montserrat text-white text-justify">
               Are you a talented young Nigerian? Do you have an innovative idea
               or startup business capable of solving the average Nigerian
               problems and transforming the country? Do you need business
               advisory and funding to launch or scale? Get in touch with us!
             </p>
-            <div className="mt-8">
+            <div className="mt-5 text-center">
               <Link
                 to="/register"
                 className="inline-flex items-center justify-center px-5 py-3 border border-limeGreen rounded-tl-2xl rounded-br-2xl text-base font-medium text-white hover:bg-limeGreen"
@@ -76,11 +76,11 @@ function Incubation() {
             </div>
           </div>
 
-          <div className="mt-12">
-            <h3 className="text-xl font-extrabold text-limeGreen font-Ubuntu md:text-2xl text-center">
+          <div className="mt-8">
+          <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl sm:text-center">
               Incubation Program
             </h3>
-            <p className="my-4 text-[14px] font-montserrat text-white">
+            <p className="my-4 text-[14px] font-montserrat text-white text-justify">
               Our incubation program is designed to ensure that your startup
               idea is market-ready and future-proof. Once you meet the criteria
               for our tribe and are confirmed as a potential V.O.I.C.E in our

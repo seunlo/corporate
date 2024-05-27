@@ -69,7 +69,7 @@ function Footer2() {
                   <TiSocialFacebook className="w-5 h-5 rounded-md cursor-pointer bg-white" />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/elaloeyfoundry?igsh=d2huaGJqNWRqbncw"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

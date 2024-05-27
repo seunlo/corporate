@@ -46,14 +46,14 @@ function Contact() {
   };
   return (
     <>
-      <div className="relative h-[100px] sm:h-[250px] overflow-hidden">
+      <div className="relative h-[150px] md:h-[200px] lg:h-[300px] overflow-hidden">
         <img
           src={contact}
           alt="Banner"
           className="absolute inset-0 w-full h-full object-cover"
         />
       </div>
-      <div className="max-w-6xl mx-auto shadow-2xl my-5 flex flex-col md:flex-row text-gray-300">
+      <div className="max-w-6xl mx-auto shadow-2xl my-5 flex flex-col md:flex-row">
         <div className="flex-1 p-8">
           <h1 className="text-3xl font-bold my-5 font-montserrat text-limeGreen">
             Get in touch
@@ -111,7 +111,7 @@ function Contact() {
           <h1 className="text-3xl font-bold my-5 font-montserrat text-limeGreen">
             Our Presence
           </h1>
-          <div className="font-montserrat">
+          <div className="font-montserrat text-white">
             <div className="flex gap-5 p-8 items-center">
               <FaMapMarkerAlt className="w-10 h-10 md:w-14 md:h-14 border-2 border-limeGreen rounded-full p-3 text-white" />
               <div className="flex flex-col font-montserrat text-[14px]">

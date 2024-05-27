@@ -7,7 +7,7 @@ function About() {
 
   return (
     <>
-      <div className="relative h-[100px] sm:h-[250px] overflow-hidden">
+      <div className="relative h-[150px] md:h-[200px] lg:h-[300px] overflow-hidden">
         <img
           src={about}
           alt="Banner"
@@ -27,12 +27,12 @@ function About() {
 }
 
 const WhoWeAre = () => (
-  <div className="flex flex-col md:flex-row gap-5 md:items-start items-center justify-center mt-2">
+  <div className="flex flex-col md:flex-row gap-3 md:items-start items-center justify-center mt-2 p-4">
     <div>
-      <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl text-center">
+      <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl sm:text-center">
         Who We Are
       </h3>
-      <p className="py-4 text-[14px] text-white">
+      <p className="py-3 text-[14px] text-white text-justify">
         Elaloey Foundry is a social enterprise and venture fund for startup
         ideas and early-stage businesses in Nigeria. We are passionate about
         spotting, incubating and funding innovative ideas and startup businesses
@@ -49,12 +49,12 @@ const WhoWeAre = () => (
 );
 
 const Affiliation = () => (
-  <div className="flex flex-col md:flex-row gap-5 md:items-start items-center justify-center mt-5">
+  <div className="flex flex-col md:flex-row gap-3 md:items-start items-center justify-center p-4">
     <div>
-      <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl text-center">
+    <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl sm:text-center">
         Affiliation
       </h3>
-      <p className="py-4 text-white text-[14px]">
+      <p className="py-3 text-white text-[14px] text-justify">
         Elaloey Foundry is a brainchild of the De Elaloey Brothers Company; an
         enterprise formation and investment company aimed at investing in people
         and businesses thereby transforming lives. De Elaloey Brothers operates
