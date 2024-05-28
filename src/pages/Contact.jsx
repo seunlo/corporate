@@ -108,7 +108,7 @@ function Contact() {
         </div>
         <div className="border border-r-0"></div>
         <div className="flex-1 p-8">
-          <h1 className="text-3xl font-bold my-5 font-montserrat text-limeGreen">
+          <h1 className="text-3xl font-bold my-5 font-montserrat text-limeGreen ml-7">
             Our Presence
           </h1>
           <div className="font-montserrat text-white">

@@ -50,14 +50,14 @@ function Incubation() {
         <img
           src={startup}
           alt="Banner"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-[500px] sm:w-full h-full object-cover"
         />
       </div>
 
       <div className="py-12 text-gray-300 font-montserrat text-[14px]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="">
-          <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl sm:text-center">
+            <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl sm:text-center">
               Pitch Your Startup
             </h3>
             <p className="mt-4 text-[16px] font-montserrat text-white text-justify">
@@ -77,7 +77,7 @@ function Incubation() {
           </div>
 
           <div className="mt-8">
-          <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl sm:text-center">
+            <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl sm:text-center">
               Incubation Program
             </h3>
             <p className="my-4 text-[14px] font-montserrat text-white text-justify">
@@ -114,9 +114,11 @@ function Incubation() {
 
       <div className="overflow-hidden text-limeGreen font-Ubuntu">
         <Slider {...settings}>
-          {["Talents. Ideas. Startups",''].map((word, index) => (
+          {["Talents. Ideas. Startups", ""].map((word, index) => (
             <div key={index} className="whitespace-nowrap">
-              <span className="inline-block px-8 text-[14px]"> {/* Changed px-4 to px-8 */}
+              <span className="inline-block px-8 text-[14px]">
+                {" "}
+                {/* Changed px-4 to px-8 */}
                 {word}
               </span>
             </div>
