@@ -11,7 +11,7 @@ function About() {
         <img
           src={about}
           alt="Banner"
-          className="absolute inset-0 w-[500px] sm:w-full h-full object-cover"
+          className="absolute inset-0 w-[300px] sm:w-full h-full object-cover"
         />
       </div>
       <div className="max-w-6xl mx-auto my-5 mb-10 font-montserrat">

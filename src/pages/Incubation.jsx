@@ -50,7 +50,7 @@ function Incubation() {
         <img
           src={startup}
           alt="Banner"
-          className="absolute inset-0 w-[500px] sm:w-full h-full object-cover"
+          className="absolute inset-0 w-[400px] sm:w-full h-full object-cover"
         />
       </div>
 
