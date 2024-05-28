@@ -7,11 +7,11 @@ function About() {
 
   return (
     <>
-      <div className="relative h-[150px] md:h-[200px] lg:h-[300px] overflow-hidden">
+      <div className="relative h-[130px] md:h-[200px] lg:h-[300px] overflow-hidden">
         <img
           src={about}
           alt="Banner"
-          className="absolute inset-0 w-[300px] sm:w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover"
         />
       </div>
       <div className="max-w-6xl mx-auto my-5 mb-10 font-montserrat">

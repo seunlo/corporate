@@ -46,7 +46,7 @@ function Contact() {
   };
   return (
     <>
-      <div className="relative h-[150px] md:h-[200px] lg:h-[300px] overflow-hidden">
+      <div className="relative h-[130px] md:h-[200px] lg:h-[300px] overflow-hidden">
         <img
           src={contact}
           alt="Banner"
