@@ -60,7 +60,7 @@ function Incubation() {
             <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl sm:text-center">
               Pitch Your Startup
             </h3>
-            <p className="mt-4 text-[16px] font-montserrat text-white text-justify">
+            <p className="mt-4 text-[14px] font-montserrat text-white">
               Are you a talented young Nigerian? Do you have an innovative idea
               or startup business capable of solving the average Nigerian
               problems and transforming the country? Do you need business
@@ -80,7 +80,7 @@ function Incubation() {
             <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl sm:text-center">
               Incubation Program
             </h3>
-            <p className="my-4 text-[14px] font-montserrat text-white text-justify">
+            <p className="my-4 text-[14px] font-montserrat text-white">
               Our incubation program is designed to ensure that your startup
               idea is market-ready and future-proof. Once you meet the criteria
               for our tribe and are confirmed as a potential V.O.I.C.E in our

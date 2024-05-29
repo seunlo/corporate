@@ -53,7 +53,7 @@ function Contact() {
           className="absolute inset-0 w-full h-full object-cover"
         />
       </div>
-      <div className="max-w-6xl mx-auto shadow-2xl my-5 flex flex-col md:flex-row">
+      <div className="max-w-6xl mx-auto shadow-2xl my-5 flex flex-col md:flex-row p-4">
         <div className="flex-1 p-8">
           <h1 className="text-3xl font-bold my-5 font-montserrat text-limeGreen">
             Get in touch
@@ -108,11 +108,11 @@ function Contact() {
         </div>
         <div className="border border-r-0"></div>
         <div className="flex-1 p-8">
-          <h1 className="text-3xl font-bold my-5 font-montserrat text-limeGreen ml-7">
+          <h1 className="text-3xl font-bold my-5 font-montserrat text-limeGreen">
             Our Presence
           </h1>
           <div className="font-montserrat text-white">
-            <div className="flex gap-5 p-8 items-center">
+            <div className="flex gap-5 items-center">
               <FaMapMarkerAlt className="w-10 h-10 md:w-14 md:h-14 border-2 border-limeGreen rounded-full p-3 text-white" />
               <div className="flex flex-col font-montserrat text-[14px]">
                 <p>Olu Osifeso Street Yaba, Lagos Nigeria</p>
@@ -120,22 +120,21 @@ function Contact() {
                 <p>+234-7060-679-276</p>
               </div>
             </div>
-            <div className="flex gap-5 p-8 items-center">
+            <div className="flex gap-5 py-10 items-center">
               <FaMapMarkerAlt className="w-10 h-10 md:w-14 md:h-14 border-2 border-limeGreen rounded-full p-3 text-white" />
               <div className="flex flex-col font-montserrat text-[14px]">
                 <p>Torkildsen Way, CM20 1AW, Harlow, Essex United Kingdom</p>
                 <p>+447-436-655-940</p>
               </div>
             </div>
-            <div className="flex gap-5 p-8 items-center">
+            <div className="flex gap-5 items-center">
               <FaMapMarkerAlt className="w-10 h-10 md:w-14 md:h-14 border-2 border-limeGreen rounded-full p-3 text-white" />
               <div className="flex flex-col font-montserrat text-[14px]">
-                <p>Legacy boulevard SE Calgary. T2X 2B9</p>
-                <p>Canada</p>
+                <p>Legacy boulevard SE Calgary. T2X 2B9 Canada</p>
                 <p>+19-055-981-853</p>
               </div>
             </div>
-            <div className="flex gap-5 p-8 items-center">
+            <div className="flex gap-5 py-10 items-center">
               <FaRegEnvelope className="w-10 h-10 md:w-14 md:h-14 border-2 border-limeGreen rounded-full p-3 text-white" />
               <div className="flex flex-col font-montserrat text-[14px]">
                 <p>info@elaloeyfoundry.com</p>

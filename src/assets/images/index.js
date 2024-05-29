@@ -13,7 +13,8 @@ import newfooter from "./newfooter.jpg";
 import newheader from "./latestheader.jpeg";
 import about from "./about.jpg";
 import contact from "./contact.jpeg";
-import startup from './startup.jpeg'
+import startup from "./startup.jpeg";
+import howwedoit from "./howwedoit.jpeg";
 
 export {
   logo,
@@ -32,4 +33,5 @@ export {
   newheader,
   about,
   contact,
+  howwedoit,
 };

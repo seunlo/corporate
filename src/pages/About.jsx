@@ -14,7 +14,7 @@ function About() {
           className="absolute inset-0 w-full h-full object-cover"
         />
       </div>
-      <div className="max-w-6xl mx-auto my-5 mb-10 font-montserrat">
+      <div className="max-w-6xl mx-auto my-5 mb-5 font-montserrat">
         <div key={1} className="p-2 panel active">
           <WhoWeAre />
           <Affiliation />
@@ -32,7 +32,7 @@ const WhoWeAre = () => (
       <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl sm:text-center">
         Who We Are
       </h3>
-      <p className="py-3 text-[14px] text-white text-justify">
+      <p className="py-3 text-[14px] text-white">
         Elaloey Foundry is a social enterprise and venture fund for startup
         ideas and early-stage businesses in Nigeria. We are passionate about
         spotting, incubating and funding innovative ideas and startup businesses
@@ -54,7 +54,7 @@ const Affiliation = () => (
     <h3 className="text-xl font-extrabold text-limeGreen md:text-2xl sm:text-center">
         Affiliation
       </h3>
-      <p className="py-3 text-white text-[14px] text-justify">
+      <p className="py-3 text-white text-[14px]">
         Elaloey Foundry is a brainchild of the De Elaloey Brothers Company; an
         enterprise formation and investment company aimed at investing in people
         and businesses thereby transforming lives. De Elaloey Brothers operates

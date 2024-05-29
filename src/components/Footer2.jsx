@@ -48,7 +48,7 @@ function Footer2() {
               <IoMailOutline className="w-4 h-4" />
               <p className="text-white text-[10px]">
                 <a href="mailto:info@elaloeyfoundry.com" className="text-white">
-                  info@elaloeyfoundry.com
+                  pitch@elaloeyfoundry.com
                 </a>
               </p>
             </div>
@@ -62,32 +62,32 @@ function Footer2() {
               </h4>
               <div className="flex justify-center gap-2 items-center my-3">
                 <a
-                  href="https://facebook.com"
+                  href="https://facebook.com/profile.php?id=61560444533246"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <TiSocialFacebook className="w-5 h-5 rounded-md cursor-pointer bg-white" />
+                  <TiSocialFacebook className="w-5 h-5 cursor-pointer text-white" />
                 </a>
                 <a
                   href="https://www.instagram.com/elaloeyfoundry?igsh=d2huaGJqNWRqbncw"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <IoLogoInstagram className="w-5 h-5 rounded-md cursor-pointer bg-white" />
+                  <IoLogoInstagram className="w-4 h-4 cursor-pointer text-white" />
                 </a>
                 <a
-                  href="https://twitter.com/"
+                  href="https://x.com/elaloeyfoundry?s=11"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <RiTwitterXFill className="w-5 h-5 rounded-md cursor-pointer bg-white" />
+                  <RiTwitterXFill className="w-4 h-4 cursor-pointer text-white" />
                 </a>
                 <a
-                  href="https://tiktok.com/"
+                  href="https://tiktok.com/@elaloeyfoundry"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <IoLogoTiktok className="w-5 h-5 rounded-md cursor-pointer bg-white" />
+                  <IoLogoTiktok className="w-4 h-4 cursor-pointer text-white" />
                 </a>
               </div>
             </div>
