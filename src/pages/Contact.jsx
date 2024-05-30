@@ -124,14 +124,14 @@ function Contact() {
               <FaMapMarkerAlt className="w-10 h-10 md:w-14 md:h-14 border-2 border-limeGreen rounded-full p-3 text-white" />
               <div className="flex flex-col font-montserrat text-[14px]">
                 <p>Torkildsen Way, CM20 1AW, Harlow, Essex United Kingdom</p>
-                <p>+447-436-655-940</p>
+                <p>+44-7436-655-940</p>
               </div>
             </div>
             <div className="flex gap-5 items-center">
               <FaMapMarkerAlt className="w-10 h-10 md:w-14 md:h-14 border-2 border-limeGreen rounded-full p-3 text-white" />
               <div className="flex flex-col font-montserrat text-[14px]">
                 <p>Legacy boulevard SE Calgary. T2X 2B9 Canada</p>
-                <p>+19-055-981-853</p>
+                <p>+1-9055-981-853</p>
               </div>
             </div>
             <div className="flex gap-5 py-10 items-center">

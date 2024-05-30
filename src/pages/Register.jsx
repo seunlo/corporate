@@ -4,7 +4,8 @@ import { toast } from "react-toastify";
 
 function Register() {
   const [formData, setFormData] = useState({
-    fname: "",
+    firstname: "",
+    lastname: "",
     email: "",
     pnumber: "",
     gender: "",
@@ -18,7 +19,8 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // if (
-    //   !formData.fname ||
+    //   !formData.firstname ||
+    //   !formData.lastname ||
     //   !formData.email ||
     //   !formData.pnumber ||
     //   !formData.gender
@@ -55,12 +57,21 @@ function Register() {
         <form className="flex flex-col" onSubmit={handleSubmit}>
           <input
             type="text"
-            name="fname"
-            id="fname"
-            value={formData.fname}
+            name="firstname"
+            id="firstname"
+            value={formData.firstname}
             onChange={handleChange}
-            placeholder="Full Name"
-            className="rounded-md py-6 border border-slate-300"
+            placeholder="First Name"
+            className="rounded-md mb-2 py-4 border border-slate-300"
+          />
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            value={formData.lastname}
+            onChange={handleChange}
+            placeholder="Last Name"
+            className="rounded-md py-4 border border-slate-300"
           />
           <input
             type="email"
@@ -69,7 +80,7 @@ function Register() {
             value={formData.email}
             onChange={handleChange}
             placeholder="Email"
-            className="my-2 rounded-md py-6 border border-slate-300"
+            className="my-2 rounded-md py-4 border border-slate-300"
           />
           <input
             type="number"
@@ -77,14 +88,14 @@ function Register() {
             id="pnumber"
             value={formData.pnumber}
             onChange={handleChange}
-            placeholder="Phone"
-            className="rounded-md py-6 border border-slate-300"
+            placeholder="Phone Number"
+            className="rounded-md py-4 border border-slate-300"
           />
           <select
             name="gender"
             value={formData.gender}
             onChange={handleChange}
-            className="my-2 rounded-md py-6 border border-slate-300"
+            className="my-2 rounded-md py-4 border border-slate-300"
           >
             <option value="" disabled>
               Select Gender

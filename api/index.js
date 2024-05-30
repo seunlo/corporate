@@ -81,28 +81,35 @@ db.connect((err) => {
 
 app.post("/register", (req, res) => {
   // Fields coming from the registrattion form
-  const { fname, email, pnumber, gender } = req.body;
-  if (!fname || !email || !pnumber || !gender) {
+  const { firstname, lastname, email, pnumber, gender } = req.body;
+  if (!firstname || !lastname || !email || !pnumber || !gender) {
     return res
       .status(400)
       .json({ success: false, message: "All fields are required" });
   }
   const query =
-    "INSERT INTO users (full_name, email, phone, gender) VALUES(?, ?, ?, ?)"; // data field should change to the form fields and arranged in the same order for insertion
-  db.execute(query, [fname, email, pnumber, gender], (err, result) => {
-    if (err) {
-      console.error("Error inserting into data:", err);
-      return res
-        .status(500)
-        .json({ success: false, message: "Database error: " + err.message });
+    "INSERT INTO users (fname, lname, email, phone, gender) VALUES(?, ?, ?, ?, ?)"; // data field should change to the form fields and arranged in the same order for insertion
+  db.execute(
+    query,
+    [firstname, lastname, email, pnumber, gender],
+    (err, result) => {
+      if (err) {
+        console.error("Error inserting into data:", err);
+        return res
+          .status(500)
+          .json({ success: false, message: "Database error: " + err.message });
+      }
+      console.log("Successfully registered:", result);
+      res
+        .status(200)
+        .json({ success: true, message: "Successfully registered" });
     }
-    console.log("Successfully registered:", result);
-    res.status(200).json({ success: true, message: "Successfully registered" });
-  });
+  );
 });
 
 app.get("/fetchUsers", (req, res) => {
-  const sql = "SELECT * FROM users";
+  //const sql = "SELECT * FROM users";
+  const sql = "SELECT * FROM users ORDER BY created_at DESC";
   db.execute(sql, (err, results) => {
     if (err) {
       return res.status(500).send(err);

@@ -20,10 +20,6 @@ function Admin() {
     navigate("/");
   };
 
-  const onChangePassword = () => {
-    // Implement change password functionality here
-  };
-
   const onViewReg = () => {
     setShowTable(!showTable);
   };
@@ -95,7 +91,7 @@ function Admin() {
           Admin Page
         </h1>
       </div>
-      <section className="max-w-6xl mx-auto flex justify-center items-center flex-col text-gray-300 px-4 sm:px-0">
+      <section className="max-w-4xl mx-auto flex justify-center items-center flex-col text-gray-300 px-4 sm:px-0">
         <h1 className="text-2xl sm:text-3xl text-center mt-6 font-bold">
           Welcome {name}
         </h1>
@@ -132,7 +128,13 @@ function Admin() {
                     scope="col"
                     className="px-2 sm:px-6 py-3 text-left text-xs uppercase tracking-wider"
                   >
-                    Full Name
+                    First Name
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-2 sm:px-6 py-3 text-left text-xs uppercase tracking-wider"
+                  >
+                    Last Name
                   </th>
                   <th
                     scope="col"
@@ -152,13 +154,22 @@ function Admin() {
                   >
                     Gender
                   </th>
+                  <th
+                    scope="col"
+                    className="px-2 sm:px-6 py-3 text-left text-xs uppercase tracking-wider"
+                  >
+                    Date Reg
+                  </th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200 text-black">
                 {currentUsers.map((user) => (
                   <tr key={user.id}>
                     <td className="px-2 sm:px-6 py-4 whitespace-nowrap">
-                      {user.full_name}
+                      {user.fname}
+                    </td>
+                    <td className="px-2 sm:px-6 py-4 whitespace-nowrap">
+                      {user.lname}
                     </td>
                     <td className="px-2 sm:px-6 py-4 whitespace-nowrap">
                       {user.email}
@@ -168,6 +179,9 @@ function Admin() {
                     </td>
                     <td className="px-2 sm:px-6 py-4 whitespace-nowrap text-sm">
                       {user.gender}
+                    </td>
+                    <td className="px-2 sm:px-6 py-4 whitespace-nowrap text-sm">
+                      {user.created_at}
                     </td>
                   </tr>
                 ))}
