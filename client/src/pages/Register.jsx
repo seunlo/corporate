@@ -117,7 +117,7 @@ function Register() {
             onNext={handleNextStep}
             errorMessage={fieldErrorMessage}
           >
-            <p className="mb-5 text-center">
+            <p className="mb-5 text-center bg-limeGreen text-white">
               Section A - <span>Tell us about you...</span>
             </p>
             <label className="">What is your name?</label>
@@ -209,7 +209,7 @@ function Register() {
             onNext={handleNextStep}
             errorMessage={fieldErrorMessage}
           >
-            <p className="text-center mb-5">
+            <p className="mb-5 text-center bg-limeGreen text-white">
               Section B - <span>Hint us about your Startup/Idea…</span>
             </p>
             <label className="">What problem are you solving?</label>
@@ -287,7 +287,7 @@ function Register() {
             isLastStep={true}
             errorMessage={fieldErrorMessage}
           >
-            <p className="text-center mb-5">
+            <p className="mb-5 text-center bg-limeGreen text-white">
               Section C - <span>Share your expectations with us…</span>
             </p>
             <label className="">What are your major challenges?</label>
